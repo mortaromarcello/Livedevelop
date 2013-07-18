@@ -12,7 +12,7 @@ if [ -d binary/isolinux ]
 then
 	sed -i -e 's|timeout 0|timeout 100|' binary/isolinux/isolinux.cfg
 	sed -i -e 's|include install.cfg|#include install.cfg|' binary/isolinux/menu.cfg
-	wget -O binary/isolinux/splash.png http://ftp.gnome.org/pub/gnome/teams/art.gnome.org/archive/themes/splash_screens/Splash-Debian2.png
+	wget -O binary/isolinux/splash.png http://d-i.debian.org/daily-images/amd64/daily/netboot/gtk/debian-installer/amd64/boot-screens/splash.png
 
 	cat >> binary/isolinux/live.cfg << EOF
 
@@ -26,7 +26,7 @@ if [ -d binary/syslinux ]
 then
 	sed -i -e 's|timeout 0|timeout 100|' binary/syslinux/syslinux.cfg
 	sed -i -e 's|include install.cfg|#include install.cfg|' binary/syslinux/menu.cfg
-	wget -O binary/syslinux/splash.png http://ftp.gnome.org/pub/gnome/teams/art.gnome.org/archive/themes/splash_screens/Splash-Debian2.png
+	wget -O binary/syslinux/splash.png http://d-i.debian.org/daily-images/amd64/daily/netboot/gtk/debian-installer/amd64/boot-screens/splash.png
 
 	cat >> binary/syslinux/live.cfg << EOF
 
