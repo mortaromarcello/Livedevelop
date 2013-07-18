@@ -42,6 +42,7 @@ gparted
 grdesktop
 grub2
 gstreamer0.10-plugins-ugly
+gstreamer0.10-plugins-really-bad
 gtkvncviewer
 hardinfo
 hdparm
@@ -63,6 +64,7 @@ libreoffice
 libreoffice-gnome
 libreoffice-help-it
 linux-wlan-ng-firmware
+live-build
 lm-sensors
 lsb-release
 lvm2
@@ -101,6 +103,9 @@ shotwell
 smartmontools
 software-properties-gtk
 stress
+sword-dict-strongs-greek
+sword-dict-strongs-hebrew
+sword-text-kjv
 synaptic
 syslinux
 unrar
@@ -108,4 +113,5 @@ unzip
 vlc
 wireshark
 xfsprogs
+xiphos
 zip
