@@ -1,6 +1,10 @@
+fluid-soundfont-gm
+ladspa-plugin
 kaffeine
-rosegarden
 musescore
+rosegarden
+pulseaudio-utils
 qsynth
 qjackctl
+wavpack
 
