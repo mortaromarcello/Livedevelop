@@ -19,16 +19,3 @@ label memtest
         linux /live/memtest
 EOF
 fi
-
-if [ -d binary/syslinux ]
-then
-	sed -i -e 's|timeout 0|timeout 100|' binary/syslinux/syslinux.cfg
-	sed -i -e 's|include install.cfg|#include install.cfg|' binary/syslinux/menu.cfg
-
-	cat >> binary/syslinux/live.cfg << EOF
-
-label memtest
-        menu label ^Memory Diagnostic Tool (memtest86+)
-        linux /live/memtest
-EOF
-fi
