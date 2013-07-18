@@ -1,7 +1,7 @@
 Livedevelop
 ===========
 This is a debian Live for developers with the addition of the repository deb-multimedia and google for the googletalk plugin.
-Non-free software has been enabled for the installation of the Adobe flash player and for some drivers media.
+Non-free software has been enabled for the installation of the Adobe flash player and for some media drivers.
 The rest is pure 100% debian. The development tools are the most popular IDEs and languages:
 Codeblocks, Eclipse, Anjuta, Lazarus, Kdevelop, QtCreator, Geany.
 The localization is italian, sorry. The desktop is Gnome.
