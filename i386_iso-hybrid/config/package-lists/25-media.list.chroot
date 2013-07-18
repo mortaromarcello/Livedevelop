@@ -1,10 +1,10 @@
 fluid-soundfont-gm
 kaffeine
-ladspa-plugin
 musescore
 rosegarden
 pulseaudio-utils
 qsynth
 qjackctl
+swh-plugins
 wavpack
 
