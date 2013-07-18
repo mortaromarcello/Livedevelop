@@ -1,8 +1,8 @@
 Livedevelop
 ===========
 This is a debian distribution for developers with the addition of the repository deb-multimedia and google for the googletalk plugin.
-The rest is pure 100% debian. The development tools are the most popular IDEs and languages​​:
-codeblocks, Eclipse, Anjuta, Lazarus, Kdevelop, QtCreator, Geany.
+The rest is pure 100% debian. The development tools are the most popular IDEs and languages:
+Codeblocks, Eclipse, Anjuta, Lazarus, Kdevelop, QtCreator, Geany.
 
 ## Prerequisites for live-build
 In order to work with Livedevelop using live-build, you must first meet the following prerequesites:
