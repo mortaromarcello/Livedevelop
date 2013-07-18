@@ -13,7 +13,6 @@ eject
 
 ### Overclockix packages
 apt-xapian-index
-boinc
 bonnie++
 btrfs-tools
 build-essential
