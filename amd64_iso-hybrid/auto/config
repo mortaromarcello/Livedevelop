@@ -5,8 +5,9 @@ set -e
 lb config noauto \
 	--distribution wheezy \
 	--archive-areas "main contrib non-free" \
-	--architecture amd64 \
-	--linux-flavours amd64 \
+	--architecture i386 \
+	--linux-flavours 486 \
+	--debian-installer live \
 	--binary-images iso-hybrid \
 	--apt-recommends false \
 	--firmware-chroot true \
