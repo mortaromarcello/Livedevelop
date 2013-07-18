@@ -29,3 +29,5 @@ There is also a build.sh script which will execute the above commands for you in
 
 ## live-build Documentation
 For further information on how to use live-build, see the live-build manual:  http://live.debian.net/manual/stable/index.en.html
+
+Thanks to the team of overclockix (www.overclockix.com) from which I derived this live.
