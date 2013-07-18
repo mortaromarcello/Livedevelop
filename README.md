@@ -14,7 +14,7 @@ In order to work with Livedevelop using live-build, you must first meet the foll
 ## Cloning the repository
 From the directory in which you want to clone the repository, execute the following command:
 ```
-git clone https://github.com/mortaromarcello/livedevelop.git
+git clone https://github.com/mortaromarcello/Livedevelop.git
 ```
 
 ## Build Instructions
