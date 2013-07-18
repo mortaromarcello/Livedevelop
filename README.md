@@ -4,6 +4,7 @@ This is a debian Live for developers with the addition of the repository deb-mul
 The rest is pure 100% debian. The development tools are the most popular IDEs and languages:
 Codeblocks, Eclipse, Anjuta, Lazarus, Kdevelop, QtCreator, Geany.
 The localization is italian, sorry.
+Ps: I added the game warzone2100 compiled from the latest release source for the long time between a compilation and the other one!
 
 ## Prerequisites for live-build
 In order to work with Livedevelop using live-build, you must first meet the following prerequesites:
