@@ -11,9 +11,9 @@ lb config noauto \
 	--apt-recommends false \
 	--firmware-chroot true \
 	--cache-packages false \
-	--iso-application "Overclockix" \
+	--iso-application "Livedevelop" \
 	--iso-preparer "mortaromarcello" \
-	--iso-publisher "Overclockix Live project; http://www.overclockix.com; mbentley@overclockix.com" \
-	--iso-volume "Overclockix" \
+	--iso-publisher "Livedevelop Live project; mortaromarcello@gmail.com" \
+	--iso-volume "Livedevelop" \
 	--bootappend-live "boot=live config locales=it_IT.UTF-8 keyboard-layouts=it timezone=Europe/Rome quiet splash persistence" \
 	"${@}"
