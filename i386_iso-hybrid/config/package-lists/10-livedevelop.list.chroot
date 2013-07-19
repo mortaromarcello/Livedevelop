@@ -113,6 +113,8 @@ syslinux
 unrar
 unzip
 vlc
+vlc-plugin-notify
+vlc-plugin-pulse
 wireshark
 xfsprogs
 xiphos
