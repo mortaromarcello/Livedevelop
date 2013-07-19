@@ -19,7 +19,7 @@ git clone https://github.com/mortaromarcello/Livedevelop.git
 ```
 
 ## Build Instructions
-Make sure that you are in the repository directory (e.g. mortaromarcello/i386_iso-hybrid) and then execute the following commands:
+Make sure that you are in the repository directory (e.g. Livedevelop/i386_iso-hybrid) and then execute the following commands:
 ```
 lb clean
 lb config
