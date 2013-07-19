@@ -48,3 +48,8 @@ alias ll='ls -l --color=auto'
 alias ls='ls --color=auto'
 alias nano='nano -w'
 alias pine='alpine'
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi

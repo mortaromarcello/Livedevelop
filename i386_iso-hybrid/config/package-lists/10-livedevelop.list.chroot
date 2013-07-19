@@ -12,6 +12,7 @@ user-setup
 eject
 
 ### Livedevelop packages
+abootimg
 apt-xapian-index
 bonnie++
 btrfs-tools
