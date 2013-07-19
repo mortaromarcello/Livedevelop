@@ -24,6 +24,7 @@ console-setup
 cpuburn
 dmraid
 dosfstools
+dvd+rw-tools
 file-roller
 firmware-b43-installer
 firmware-linux
