@@ -98,8 +98,8 @@ samba
 samba-common-bin
 screen
 sensors-applet
-selinux-basics
-selinux-policy-default
+### selinux-basics
+### selinux-policy-default
 shotwell
 smartmontools
 software-properties-gtk
