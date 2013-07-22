@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo
+echo "live-config hook: extensions"
+ENABLED_EXTENSIONS=$(gsettings get org.gnome.shell enabled-extensions|sed -e 's/[[]//'|sed -e 's/[]]//')
+ENABLED_EXTENSIONS="$(echo $ENABLED_EXTENSIONS), 'alternative-status-menu@gnome-shell-extensions.gnome.org', 'removeaccessibility@lomegor',  'Move_Clock@rmy.pobox.com, axemenu@wheezy', 'TaskBar@xesnet.fr',  'AdvancedVolumeMixer@harry.karvonen.gmail.com', 'RecentItems@bananenfisch.net',  'quitbutton@azathoth92.hotmail.it'"
+gsettings set org.gnome.shell enabled-extensions "[$ENABLED_EXTENSIONS]"
