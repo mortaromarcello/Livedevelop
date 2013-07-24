@@ -17,6 +17,7 @@ apt-xapian-index
 bonnie++
 btrfs-tools
 build-essential
+calibre
 chntpw
 conky
 cpuburn
@@ -65,7 +66,6 @@ rar
 reiser4progs
 reiserfsprogs
 samba
-samba-common-bin
 screen
 sensors-applet
 smartmontools
