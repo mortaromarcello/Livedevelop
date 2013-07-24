@@ -1,8 +1,0 @@
-#!/bin/sh
-
-[[ ! -d /tmp/calibre ]] && mkdir -p /tmp/calibre; cd /tmp/calibre
-wget http://downloads.sourceforge.net/project/calibre/0.9.40/calibre-0.9.40.tar.xz
-tar xfv calibre-0.9.40.tar.xz
-cd calibre
-python setup.py install
-rm -R -f -v /tmp/calibre
