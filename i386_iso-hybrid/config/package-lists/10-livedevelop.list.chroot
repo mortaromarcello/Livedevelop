@@ -21,6 +21,8 @@ calibre
 chntpw
 conky
 cpuburn
+dict-freedict-eng-ita
+dict-freedict-ita-eng
 dmraid
 dosfstools
 etherape
@@ -70,6 +72,7 @@ screen
 sensors-applet
 smartmontools
 software-properties-gtk
+stardict
 stress
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
