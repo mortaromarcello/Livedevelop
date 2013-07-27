@@ -30,6 +30,7 @@ firmware-b43-installer
 firmware-linux
 firmware-realtek
 flashplugin-nonfree
+goldendict
 gpart
 gparted
 grdesktop
@@ -72,7 +73,6 @@ screen
 sensors-applet
 smartmontools
 software-properties-gtk
-stardict
 stress
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
