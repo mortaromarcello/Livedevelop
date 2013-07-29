@@ -82,6 +82,9 @@ syslinux
 unrar
 unzip
 vlc
+wine
+libwine-print
+libwine-gl
 wireshark
 xfsprogs
 xiphos
