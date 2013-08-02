@@ -23,6 +23,7 @@ libgtkmm-3.0-doc
 liblocale-gettext-perl
 libopenal-dev
 libphysfs-dev
+libproc-processtable-perl
 libqt4-dev
 libsdl1.2-dev
 libsublime-dev
@@ -39,6 +40,7 @@ monodevelop
 monodevelop-database
 monodevelop-nunit
 monodevelop-versioncontrol
+patchutils
 pyqt4-dev-tools
 qtcreator
 ruby
