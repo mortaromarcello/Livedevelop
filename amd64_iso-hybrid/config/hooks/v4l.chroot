@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 [[ ! -d /tmp/v4l ]] && mkdir -p /tmp/v4l; cd /tmp/v4l
 git clone git://linuxtv.org/media_build.git
