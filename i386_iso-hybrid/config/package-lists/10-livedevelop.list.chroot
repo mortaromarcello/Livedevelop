@@ -19,6 +19,8 @@ btrfs-tools
 build-essential
 calibre
 chntpw
+chromium
+chromium-l10n
 conky
 cpuburn
 dict-freedict-eng-ita
