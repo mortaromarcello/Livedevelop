@@ -8,10 +8,9 @@ lb config noauto \
 	--architecture i386 \
 	--linux-flavours 486 \
 	--binary-images iso-hybrid \
-	--firmware-chroot true \
 	--iso-application "Livedevelop" \
 	--iso-preparer "mortaromarcello" \
 	--iso-publisher "Livedevelop Live project; mortaromarcello@gmail.com" \
 	--iso-volume "Livedevelop" \
-	--bootappend-live "boot=live config locales=it_IT.UTF-8 keyboard-layouts=it timezone=Europe/Rome quiet splash persistence" \
+	--bootappend-live "boot=live config locales=it_IT.UTF-8 keyboard-layouts=it quiet splash persistence" \
 	"${@}"

@@ -26,6 +26,7 @@ cpuburn
 dict-freedict-eng-ita
 dict-freedict-ita-eng
 dmraid
+dsniff
 dosfstools
 etherape
 firmware-b43-installer
@@ -42,6 +43,7 @@ hardinfo
 hfsprogs
 hfsutils
 htop
+hunt
 iftop
 iotop
 iperf
@@ -59,7 +61,8 @@ mc
 memtest86+
 nautilus-open-terminal
 nfs-kernel-server
-ntfsprogs
+netsniff-ng
+ntfs-3g
 openssh-server
 p7zip-full
 parted
@@ -75,6 +78,7 @@ samba
 screen
 sensors-applet
 smartmontools
+sniffit
 software-properties-gtk
 stardict
 stress
