@@ -42,6 +42,7 @@ gstreamer0.10-plugins-really-bad
 hardinfo
 hfsprogs
 hfsutils
+hping3
 htop
 hunt
 iftop
@@ -59,6 +60,7 @@ lm-sensors
 lvm2
 mc
 memtest86+
+nant
 nautilus-open-terminal
 nfs-kernel-server
 netsniff-ng
@@ -87,6 +89,7 @@ sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
 syslinux
+tgn
 unrar
 unzip
 vlc
