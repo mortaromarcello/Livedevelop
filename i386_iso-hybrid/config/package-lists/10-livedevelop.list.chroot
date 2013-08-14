@@ -14,7 +14,6 @@ eject
 ### Livedevelop packages
 abootimg
 apt-xapian-index
-bonnie++
 btrfs-tools
 build-essential
 calibre
@@ -22,7 +21,6 @@ chntpw
 chromium
 chromium-l10n
 conky
-cpuburn
 dict-freedict-eng-ita
 dict-freedict-ita-eng
 dmraid
@@ -43,11 +41,7 @@ hardinfo
 hfsprogs
 hfsutils
 hping3
-htop
 hunt
-iftop
-iotop
-iperf
 jfsutils
 k3b
 k3b-i18n
@@ -57,7 +51,6 @@ libgtk2-perl
 linux-wlan-ng-firmware
 live-build
 lm-sensors
-lvm2
 mc
 memtest86+
 nautilus-open-terminal
@@ -68,22 +61,17 @@ openssh-server
 p7zip-full
 parted
 partimage
-phoronix-test-suite
-ppp
 putty
-pv
 qemuctl
 rar
 reiser4progs
 reiserfsprogs
 samba
-screen
 sensors-applet
 smartmontools
 sniffit
 software-properties-gtk
 stardict
-stress
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
