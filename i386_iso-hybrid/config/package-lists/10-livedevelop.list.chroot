@@ -60,7 +60,6 @@ lm-sensors
 lvm2
 mc
 memtest86+
-nant
 nautilus-open-terminal
 nfs-kernel-server
 netsniff-ng
