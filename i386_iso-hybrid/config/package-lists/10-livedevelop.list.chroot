@@ -13,6 +13,7 @@ eject
 
 ### Livedevelop packages
 agedu
+autopsy
 bkhive
 abootimg
 apt-xapian-index
@@ -73,6 +74,7 @@ nfs-kernel-server
 netsniff-ng
 ngrep
 ntfs-3g
+ophcrack
 openssh-server
 p0f
 p7zip-full
@@ -82,6 +84,7 @@ putty
 qemuctl
 rar
 recoverdm
+reglookup
 reiser4progs
 reiserfsprogs
 samba
@@ -108,7 +111,7 @@ unison-gtk
 unrar
 unzip
 vlc
-winbind4
+winbind
 wine
 wipe
 xprobe
