@@ -1,0 +1,7 @@
+#!/bin/bash
+
+[[ ! -d /tmp/v4l ]] && mkdir -p /tmp/v4l; cd /tmp/v4l
+git clone git://linuxtv.org/media_build.git
+cd media_build/
+./build && make install
+rm -R -f -v /tmp/v4l
