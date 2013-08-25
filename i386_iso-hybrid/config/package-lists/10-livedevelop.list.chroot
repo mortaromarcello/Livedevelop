@@ -1,11 +1,3 @@
-### base system
-! Packages Priority standard
-task-gnome-desktop
-task-italian
-task-italian-desktop
-task-italian-kde-desktop
-task-laptop
-
 ### packages for the live distro
 live-tools
 user-setup
