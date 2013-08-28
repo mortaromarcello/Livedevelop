@@ -1,8 +1,0 @@
-#!/bin/bash
-
-[[ ! -d /tmp/clonezilla ]] && mkdir -p /tmp/clonezilla; cd /tmp/clonezilla
-wget http://free.nchc.org.tw/drbl-core/src/stable/clonezilla-3.5.2.tar.bz2
-tar xfv warzone2100-3.1.0.tar.xz
-cd clonezilla-3.5.2
-make install
-rm -R -f -v /tmp/clonezilla
