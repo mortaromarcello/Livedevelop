@@ -13,6 +13,7 @@ dar
 di
 disktype
 dmraid
+drbl
 dsniff
 etherape
 gddrescue
@@ -25,9 +26,11 @@ hfsutils
 hping3
 hunt
 hwinfo
+ipxe
 jfsutils
 john
 ldap-utils
+lzop
 makebootfat
 mbr
 myrescue
@@ -39,8 +42,10 @@ ngrep
 ophcrack
 openssh-server
 p0f
+partclone
 parted
 partimage
+partitionmanager
 putty
 recoverdm
 reglookup
