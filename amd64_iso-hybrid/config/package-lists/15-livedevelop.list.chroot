@@ -7,13 +7,13 @@ abootimg
 btrfs-tools
 calibre
 chntpw
+clonezilla
 conky
 cryptmount
 dar
 di
 disktype
 dmraid
-drbl
 dsniff
 etherape
 gddrescue
@@ -42,9 +42,7 @@ ngrep
 ophcrack
 openssh-server
 p0f
-partclone
 parted
-partimage
 partitionmanager
 putty
 recoverdm
