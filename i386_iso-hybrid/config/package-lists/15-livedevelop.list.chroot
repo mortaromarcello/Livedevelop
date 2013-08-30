@@ -14,9 +14,13 @@ clonezilla
 conky
 cryptmount
 dar
+deborphan
 di
+dirvish
 disktype
+dmidecode
 dmraid
+dmsetup
 drbl-chntpw
 dsniff
 efibootmgr
@@ -53,6 +57,7 @@ live-boot
 live-config
 lrzip
 lshw
+lsof
 lsscsi
 lvm2
 lzip
@@ -60,6 +65,7 @@ lziprecover
 lzma
 lzop
 makebootfat
+mawk
 mbr
 mdadm
 mkswap-uuid
@@ -76,11 +82,14 @@ p0f
 partclone
 parted
 partitionmanager
+pbzip2
 pcscd
 pwgen
 pigz
+plzip
 putty
 recoverdm
+refit
 reglookup
 reiser4progs
 reiserfsprogs
@@ -104,8 +113,9 @@ tcptrace
 tcpstat
 testdisk
 tgn
-
+tofrodos
 u3-tool
+udftools
 v86d
 vlan
 vmfs-tools
