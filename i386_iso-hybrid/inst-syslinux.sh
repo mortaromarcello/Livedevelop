@@ -78,6 +78,15 @@ DEFAULT label
 
 LABEL label
 MENU LABEL label
+
+MENU SEPARATOR
+
+LABEL -
+MENU LABEL Reboot
+TEXT HELP
+ Reboot the PC.
+ENDTEXT
+COM32 /boot/syslinux/reboot.c32
 EOF
 	umount $2
 	echo "Fatto!"
