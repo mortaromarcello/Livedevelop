@@ -30,7 +30,6 @@ etherwake
 ethtool
 exfat-fuse
 exfat-utils
-extlinux
 foremost
 fsarchiver
 gddrescue
@@ -38,7 +37,6 @@ gdisk
 gpart
 gnome-search-tool
 gptsync
-grub-pc
 grdesktop
 gzrt
 hardinfo
