@@ -32,7 +32,7 @@ if [ -e /usr/bin/syslinux ]; then
 	echo "Installo syslinux in ${1}1 (premere Invio o Crtl-c per uscire)"
 	read
 	syslinux --directory /boot/syslinux/ --install ${1}1
-	for i in chain.c32 config.c32 hdt.c32 libutil.c32 memdisk menu.c32 reboot.c32 vesamenu.c32 whichsys.c32; do
+	for i in chain.c32 config.c32 hdt.c32 libcom32.c32 libutil.c32 memdisk menu.c32 reboot.c32 vesamenu.c32 whichsys.c32; do
 		cp /usr/lib/syslinux/$i ${2}/boot/syslinux/
 	done
 	if [ ! -d ${2}/menus/syslinux ]; then
