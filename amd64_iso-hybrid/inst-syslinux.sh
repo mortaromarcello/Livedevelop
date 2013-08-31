@@ -32,6 +32,53 @@ if [ -e /usr/bin/syslinux ]; then
 	echo "Installo syslinux in ${1}1 (premere Invio o Crtl-c per uscire)"
 	read
 	syslinux --directory /boot/syslinux/ --install ${1}1
+	for i in chain.c32 config.c32 hdt.c32 libutil.c32 memdisk menu.c32 reboot.c32 vesamenu.c32 whichsys.c32; do
+		cp /usr/lib/syslinux/$i ${2}/boot/syslinux/
+	done
+	if [ ! -d ${2}/menus/syslinux ]; then
+		echo "Creo la directory ${1}1/menus/syslinux (premere Invio o Crtl-c per uscire)"
+		read
+		mkdir -p ${2}/menus/syslinux
+	fi
+	cat >${2}/boot/syslinux/syslinux.cfg <<EOF
+DEFAULT main
+
+LABEL main
+COM32 /boot/syslinux/menu.c32
+APPEND /menus/syslinux/main.cfg
+EOF
+	cat >${2}/menus/syslinux/defaults.cfg <<EOF
+MENU TITLE Title
+
+MENU MARGIN 0
+MENU ROWS -9
+MENU TABMSG
+MENU TABMSGROW -3
+MENU CMDLINEROW -3
+MENU HELPMSGROW -4
+MENU HELPMSGENDROW -1
+
+MENU COLOR SCREEN 37;40
+MENU COLOR BORDER 34;40
+MENU COLOR TITLE 1;33;40
+MENU COLOR SCROLLBAR 34;46
+MENU COLOR SEL 30;47
+MENU COLOR UNSEL 36;40
+MENU COLOR CMDMARK 37;40
+MENU COLOR CMDLINE 37;40
+MENU COLOR TABMSG 37;40
+MENU COLOR DISABLED 37;40
+MENU COLOR HELP 32;40
+EOF
+	cat >${2}/menus/syslinux/main.cfg <<EOF
+MENU INCLUDE /menus/syslinux/defaults.cfg
+UI /boot/syslinux/menu.c32
+
+DEFAULT label
+
+LABEL label
+MENU LABEL label
+EOF
 	umount $2
 	echo "Fatto!"
 else
