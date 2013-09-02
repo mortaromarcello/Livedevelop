@@ -15,6 +15,20 @@ if [ -z $1 ] & [ -z $2 ]; then
 Attenzione: il disco deve contenere la prima partizione come fat32!"
 	exit
 fi
+
+#-----------------------------------------------------------------------
+echo -e "Posso cancellare la pennetta e ricreare la partizione. Sei d'accordo (s/n)?"
+read sn
+if [ ${sn} = "s" ]; then
+	echo "Sovrascrivo la tabella delle partizioni."
+	parted -s ${1} mktable msdos
+	echo "Creo la partizione primaria fat32 alla massima dimensione."
+	echo -e "mkpart primary fat32 1 -1\nset 1 boot on\nq\n" | parted ${1}
+	echo "Formatto la partizione."
+	mkdosfs ${1}1
+fi
+#-----------------------------------------------------------------------
+
 if [ -e /usr/bin/syslinux ]; then
 	mount ${1}1 $2 </dev/null
 	if [ -z ${?} ]; then
