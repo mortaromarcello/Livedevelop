@@ -30,13 +30,13 @@ fi
 #-----------------------------------------------------------------------
 
 if [ -e /usr/bin/syslinux ]; then
-	mount ${1}1 $2 </dev/null
+	mount ${1}1 ${2} </dev/null
 	if [ -z ${?} ]; then
 		echo "Errore montando ${1}1 in ${2}"
 		exit
 	fi
 	if [ ! -d ${2}/boot/syslinux ]; then
-		echo "Creo la directory ${1}1/boot/syslinux (premere Invio o Crtl-c per uscire)"
+		echo "Creo la directory ${2}/boot/syslinux (premere Invio o Crtl-c per uscire)"
 		read
 		mkdir -p ${2}/boot/syslinux
 	fi
@@ -50,7 +50,7 @@ if [ -e /usr/bin/syslinux ]; then
 		cp /usr/lib/syslinux/$i ${2}/boot/syslinux/
 	done
 	if [ ! -d ${2}/menus/syslinux ]; then
-		echo "Creo la directory ${1}1/menus/syslinux (premere Invio o Crtl-c per uscire)"
+		echo "Creo la directory ${2}/menus/syslinux (premere Invio o Crtl-c per uscire)"
 		read
 		mkdir -p ${2}/menus/syslinux
 	fi
