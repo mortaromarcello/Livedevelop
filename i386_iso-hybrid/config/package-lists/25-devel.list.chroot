@@ -6,6 +6,7 @@ codeblocks-contrib
 cmake
 ddd
 eclipse
+empty-expect
 eric
 expect
 flex
