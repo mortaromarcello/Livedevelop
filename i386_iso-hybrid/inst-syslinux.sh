@@ -42,7 +42,7 @@ if [ -e /usr/bin/syslinux ]; then
 	fi
 	echo "Copio mbr in ${1} (premere Invio o Crtl-c per uscire)"
 	read
-	cat /usr/lib/syslinux/mbr.bin > $1
+	cat /usr/lib/syslinux/mbr.bin > ${1}
 	echo "Installo syslinux in ${1}1 (premere Invio o Crtl-c per uscire)"
 	read
 	syslinux --directory /boot/syslinux/ --install ${1}1
