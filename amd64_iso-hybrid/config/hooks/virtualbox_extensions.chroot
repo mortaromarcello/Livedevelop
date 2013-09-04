@@ -1,0 +1,6 @@
+#!/bin/bash
+[[ ! -d /tmp/Oracle_VM_VirtualBox_Extension_Pack ]] && mkdir -p /tmp/Oracle_VM_VirtualBox_Extension_Pack; cd /tmp/Oracle_VM_VirtualBox_Extension_Pack
+wget http://download.virtualbox.org/virtualbox/4.1.18/Oracle_VM_VirtualBox_Extension_Pack-4.1.18-78361.vbox-extpack
+VboxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-4.1.18-78361.vbox-extpack
+rm -R -f -v /tmp/Oracle_VM_VirtualBox_Extension_Pack
+
