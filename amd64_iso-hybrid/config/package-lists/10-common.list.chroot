@@ -29,7 +29,8 @@ mc
 memtest86+
 ntfs-3g
 p7zip-full
-qemuctl
+qemu
+qemu-kvm
 rar
 samba
 stardict

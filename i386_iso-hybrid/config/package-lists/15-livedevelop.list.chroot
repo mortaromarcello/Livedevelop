@@ -86,6 +86,7 @@ pwgen
 pigz
 plzip
 putty
+qemuctl
 recoverdm
 refit
 reglookup
@@ -114,6 +115,7 @@ tgn
 tofrodos
 u3-tool
 udftools
+uml-utilities
 v86d
 vlan
 vmfs-tools
