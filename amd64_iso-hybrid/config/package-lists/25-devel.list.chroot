@@ -13,6 +13,7 @@ flex
 geany
 geany-plugins
 git
+git-gui
 gjs
 glade
 gnome-devel
@@ -44,6 +45,7 @@ monodevelop-versioncontrol
 netexpect
 patchutils
 pyqt4-dev-tools
+qgit
 qtcreator
 ruby
 ruby-gnome2

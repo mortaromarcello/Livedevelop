@@ -6,7 +6,7 @@ lb config noauto \
 	--distribution wheezy \
 	--archive-areas "main contrib non-free" \
 	--architecture i386 \
-	--linux-flavours 486 \
+	--linux-flavours 686-pae \
 	--binary-images iso-hybrid \
 	--iso-application "Livedevelop" \
 	--iso-preparer "mortaromarcello" \
