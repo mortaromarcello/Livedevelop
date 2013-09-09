@@ -1,9 +1,13 @@
+adminer
 bison
 bless
+bluefish
 boa-constructor
+ckeditor
 codeblocks
 codeblocks-contrib
 cmake
+cssed
 ddd
 eclipse
 empty-expect
@@ -17,6 +21,7 @@ git-gui
 gjs
 glade
 gnome-devel
+gnu-efi
 lazarus
 libfontconfig1-dev
 libfribidi-dev
@@ -42,6 +47,8 @@ monodevelop
 monodevelop-database
 monodevelop-nunit
 monodevelop-versioncontrol
+nasm
+netbeans
 netexpect
 patchutils
 pyqt4-dev-tools
@@ -55,4 +62,3 @@ valac
 wx2.8-doc
 wx2.8-i18n
 yasm
-

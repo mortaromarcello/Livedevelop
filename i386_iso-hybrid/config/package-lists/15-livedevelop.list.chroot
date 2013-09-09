@@ -52,6 +52,7 @@ john
 kexec-tools
 ldap-utils
 lftp
+libapache2-mod-php5
 live-boot
 live-config
 lrzip
@@ -69,6 +70,8 @@ mbr
 mdadm
 mkswap-uuid
 myrescue
+mysql-server
+mysql-client
 ncpfs
 netsed
 nautilus-open-terminal
@@ -83,10 +86,12 @@ parted
 partitionmanager
 pbzip2
 pcscd
-pwgen
+php5
+php5-mysql
 pigz
 plzip
 putty
+pwgen
 qemuctl
 recoverdm
 refit
@@ -120,6 +125,7 @@ uml-utilities
 v86d
 vlan
 vmfs-tools
+w3af
 wakeonlan
 wipe
 wireshark
