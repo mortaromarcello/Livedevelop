@@ -31,6 +31,7 @@ etherwake
 ethtool
 exfat-fuse
 exfat-utils
+extlinux
 foremost
 fsarchiver
 gddrescue
@@ -39,6 +40,7 @@ gpart
 gnome-search-tool
 gptsync
 grdesktop
+grub-pc
 gzrt
 hardinfo
 hfsprogs
@@ -123,6 +125,10 @@ u3-tool
 udftools
 uml-utilities
 v86d
+virtualbox
+virtualbox-guest-dkms
+virtualbox-guest-utils
+virtualbox-guest-x11
 vlan
 vmfs-tools
 w3af

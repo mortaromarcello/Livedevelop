@@ -3,7 +3,6 @@ bison
 bless
 bluefish
 boa-constructor
-ckeditor
 codeblocks
 codeblocks-contrib
 cmake
@@ -22,6 +21,7 @@ gjs
 glade
 gnome-devel
 gnu-efi
+gphpedit
 lazarus
 libfontconfig1-dev
 libfribidi-dev
@@ -42,6 +42,10 @@ libwxsmithlib-dev
 kdelibs5-dev
 kdevelop
 kdevelop-l10n
+kdevelop-php
+kdevelop-php-docs
+kdevelop-php-docs-l10n
+kdevelop-php-l10n
 meld
 monodevelop
 monodevelop-database

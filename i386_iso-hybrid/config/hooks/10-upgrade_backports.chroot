@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Upgraded to backports repository"
-apt-get -t wheezy-backports --yes upgrade
-apt-get -t wheezy-backports --yes install linux-image-3.9-0.bpo.1-686-pae linux-headers-3.9-0.bpo.1-686-pae virtualbox virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
-apt-get purge --yes linux-image-3.2.*
-echo "done."
