@@ -1,6 +1,7 @@
 ### Livedevelop packages
 agedu
 apache2
+aqemu
 aspell-en
 autopsy
 bkhive
@@ -125,7 +126,6 @@ u3-tool
 udftools
 uml-utilities
 v86d
-virtualbox
 virtualbox-guest-dkms
 virtualbox-guest-utils
 virtualbox-guest-x11
