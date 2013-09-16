@@ -4,7 +4,6 @@
 git clone http://github.com/mortaromarcello/sakis3g-source
 cd sakis3g-source
 mkdir build
-touch build/switchconfig
 ./compile
 cp build/sakis3gz /usr/bin/sakis3g
 cp files/saki3g.png /usr/share/icons
