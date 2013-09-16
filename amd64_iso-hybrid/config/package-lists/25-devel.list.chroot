@@ -23,8 +23,10 @@ gnome-devel
 gnu-efi
 gphpedit
 lazarus
+leksah
 libfontconfig1-dev
 libfribidi-dev
+libghc-gtk-dev
 libglew-dev
 libgtkmm-3.0-doc
 liblocale-gettext-perl
@@ -34,6 +36,7 @@ libproc-processtable-perl
 libqt4-dev
 libsdl1.2-dev
 libsublime-dev
+libusb-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev
@@ -63,6 +66,7 @@ ruby-gnome2
 spe
 swig
 valac
+virtaal
 wx2.8-doc
 wx2.8-i18n
 yasm
