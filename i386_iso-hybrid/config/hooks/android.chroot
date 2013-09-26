@@ -1,0 +1,14 @@
+#!/bin/bash
+
+[[ ! -d /tmp/android ]] && mkdir -p /tmp/android; cd /tmp/android
+
+wget http://dl.google.com/android/adt/adt-bundle-linux-x86-20130917.zip
+
+if [ ! -d /opt ]; then
+  mkdir -m 0755 -p /opt
+fi
+
+unzip -d /opt adt-bundle-linux-x86-20130917.zip
+chmod 0755 /opt/adt-bundle-linux-x86-20130917
+
+rm -R -f -v /tmp/android

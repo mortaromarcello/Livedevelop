@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Eclipse
+Comment=Eclipse Integrated Development Environment
+Icon=/opt/adt-bundle-linux-x86-20130917/icon.xpm
+Exec=/opt/adt-bundle-linux-x86-20130917/eclipse
+Terminal=false
+Categories=Development;IDE;Java;
