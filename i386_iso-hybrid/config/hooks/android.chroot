@@ -10,5 +10,5 @@ fi
 
 unzip -d /opt adt-bundle-linux-x86-20130917.zip
 chmod 0755 /opt/adt-bundle-linux-x86-20130917
-chmod -R 0755 /opt/adt-bundle-linux-x86-20130917/sdk
+chmod -R 0777 /opt/adt-bundle-linux-x86-20130917/sdk
 rm -R -f -v /tmp/android
