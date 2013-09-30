@@ -1,14 +1,15 @@
 #!/bin/bash
-
+VERSIONE="linux-x86-20130917"
 [[ ! -d /tmp/android ]] && mkdir -p /tmp/android; cd /tmp/android
 
-wget http://dl.google.com/android/adt/adt-bundle-linux-x86-20130917.zip
+wget http://dl.google.com/android/adt/adt-bundle-${VERSIONE}.zip
 
 if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
 fi
-
-unzip -d /opt adt-bundle-linux-x86-20130917.zip
-chmod 0755 /opt/adt-bundle-linux-x86-20130917
-chmod -R 0777 /opt/adt-bundle-linux-x86-20130917/sdk
+unzip -d /opt adt-bundle-${VERSIONE}.zip
+addgroup android
+chown -R :android adt-bundle-${VERSIONE}
+chmod 0775 /opt/adt-bundle-${VERSIONE}
+chmod -R 0775 /opt/adt-bundle-${VERSIONE}/sdk
 rm -R -f -v /tmp/android
