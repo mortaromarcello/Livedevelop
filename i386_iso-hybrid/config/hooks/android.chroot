@@ -9,7 +9,7 @@ if [ ! -d /opt ]; then
 fi
 unzip -d /opt adt-bundle-${VERSIONE}.zip
 addgroup android
-chown -R :android adt-bundle-${VERSIONE}
+chown -R :android /opt/adt-bundle-${VERSIONE}
 chmod 0775 /opt/adt-bundle-${VERSIONE}
 chmod -R 0775 /opt/adt-bundle-${VERSIONE}/sdk
 rm -R -f -v /tmp/android
