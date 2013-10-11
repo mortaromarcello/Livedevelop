@@ -7,6 +7,7 @@ codeblocks
 codeblocks-contrib
 cmake
 cssed
+curl
 ddd
 empty-expect
 eric
@@ -14,6 +15,7 @@ expect
 flex
 geany
 geany-plugins
+gperf
 git
 git-gui
 gjs
@@ -29,10 +31,12 @@ libghc-gtk-dev
 libglew-dev
 libgtkmm-3.0-doc
 liblocale-gettext-perl
+libncurses5-dev
 libopenal-dev
 libphysfs-dev
 libproc-processtable-perl
 libqt4-dev
+libreadline-dev
 libsdl1.2-dev
 libsublime-dev
 libusb-dev
@@ -49,6 +53,7 @@ kdevelop-php-docs
 kdevelop-php-docs-l10n
 kdevelop-php-l10n
 meld
+mingw32
 monodevelop
 monodevelop-database
 monodevelop-nunit
@@ -59,6 +64,7 @@ netexpect
 patchutils
 pida
 pyqt4-dev-tools
+python-markdown
 qgit
 qtcreator
 ruby
@@ -70,3 +76,4 @@ virtaal
 wx2.8-doc
 wx2.8-i18n
 yasm
+zlib1g-dev
