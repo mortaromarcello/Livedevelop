@@ -8,7 +8,7 @@ if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
 fi
 unzip -d /opt adt-bundle-${VERSIONE}.zip
-addgroup android
+addgroup --gid 1100 android
 chown -R :android /opt/adt-bundle-${VERSIONE}
 chmod 0775 /opt/adt-bundle-${VERSIONE}
 chmod -R 0775 /opt/adt-bundle-${VERSIONE}/sdk
