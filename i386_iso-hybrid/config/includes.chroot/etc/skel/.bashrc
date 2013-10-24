@@ -53,3 +53,6 @@ alias pine='alpine'
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+if [ -e "$HOME/.environment" ]; then
+  source $HOME/.environment
+fi
