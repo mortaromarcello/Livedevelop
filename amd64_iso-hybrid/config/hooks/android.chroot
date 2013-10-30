@@ -9,7 +9,7 @@ if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
 fi
 unzip -d /opt adt-bundle-${VERSIONE_SDK}.zip
-tar -C /opt -xzf android-ndk-${VERSIONE_NDK}-linux-x86.tar.bz2
+tar -C /opt -xvjf android-ndk-${VERSIONE_NDK}-linux-x86.tar.bz2
 addgroup --gid 1100 android
 chown -R :android /opt/adt-bundle-${VERSIONE_SDK}
 chown -R :android /opt/android-ndk-${VERSIONE_NDK}
