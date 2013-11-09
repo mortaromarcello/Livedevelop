@@ -23,6 +23,7 @@ glade
 gnome-devel
 gnu-efi
 gphpedit
+intltool
 lazarus
 leksah
 libfontconfig1-dev
@@ -30,6 +31,8 @@ libfribidi-dev
 libghc-gtk-dev
 libglew-dev
 libgtkmm-3.0-doc
+libjack-jackd2-dev
+liblash-compat-dev
 liblocale-gettext-perl
 libncurses5-dev
 libopenal-dev
@@ -38,6 +41,7 @@ libproc-processtable-perl
 libqt4-dev
 libreadline-dev
 libsdl1.2-dev
+libsmf-dev
 libsublime-dev
 libusb-dev
 libtheora-dev
@@ -65,7 +69,9 @@ netexpect
 patchutils
 pida
 pyqt4-dev-tools
+python-gtk2-dev
 python-markdown
+python-rope
 qgit
 qtcreator
 ruby

@@ -10,6 +10,7 @@ bsdutils
 btrfs-tools
 busybox
 calibre
+checkinstall
 chntpw
 cifs-utils
 clonezilla
@@ -93,6 +94,7 @@ php5
 php5-mysql
 pigz
 plzip
+proftpd-basic
 putty
 pwgen
 qemuctl
