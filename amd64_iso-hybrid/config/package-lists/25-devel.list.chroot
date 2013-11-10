@@ -71,13 +71,13 @@ pida
 pyqt4-dev-tools
 python-gtk2-dev
 python-markdown
-python-psyco
 python-rope
 qgit
 qtcreator
 ruby
 ruby-gnome2
 spe
+spyder
 swig
 valac
 virtaal

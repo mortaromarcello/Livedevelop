@@ -1,18 +1,8 @@
 #!/bin/bash
 
 [[ ! -d /tmp/mma ]] && mkdir -p /tmp/mma; cd /tmp/mma
-wget http://www.mellowood.ca/mma/mma-devl.12.10d.tar.gz
-tar xfv mma-devl.12.10d.tar.gz
-cd mma-bin-12.10d
-dest="/usr/local/share/mma"
-exe="/usr/local/bin/mma"
-mkdir -p $dest
-cp -v mma.py $exe
-for dir in lib includes MMA docs; do
-  cp -r $dir $dest
-done
-$exe -G
-chmod a+w $dest/lib/stdlib/.mmaDB
-
+git clone https://github.com/mortaromarcello/mma.git
+cd mma
+./install.sh
 rm -R -f /tmp/mma
 
