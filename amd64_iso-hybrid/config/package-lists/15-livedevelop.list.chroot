@@ -90,6 +90,8 @@ parted
 partitionmanager
 pbzip2
 pcscd
+pdfchain
+pdfsam
 php5
 php5-curl
 php5-gd
