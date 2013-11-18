@@ -29,6 +29,7 @@ leksah
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev
+libgirepository1.0-dev
 libglew-dev
 libgtkmm-3.0-doc
 libjack-jackd2-dev
@@ -70,6 +71,8 @@ patchutils
 pida
 poedit
 pyqt4-dev-tools
+python-all-dev
+python-cairo-dev
 python-gtk2-dev
 python-markdown
 python-rope
