@@ -108,6 +108,7 @@ refit
 reglookup
 reiser4progs
 reiserfsprogs
+rfkill
 rsnapshot
 samdump2
 screen
@@ -132,6 +133,7 @@ tofrodos
 u3-tool
 udftools
 uml-utilities
+urfkill
 v86d
 virtualbox-guest-dkms
 virtualbox-guest-utils
