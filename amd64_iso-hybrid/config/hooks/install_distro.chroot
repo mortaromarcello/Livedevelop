@@ -1,0 +1,8 @@
+#!/bin/bash
+
+[[ ! -d /tmp/scipts ]] && mkdir -p /tmp/scripts; cd /tmp/scripts
+git clone https://github.com/mortaromarcello/scripts
+cd scripts
+cp -v ./simple_install_distro.sh /usr/sbin/install_distro.sh
+chmod +x /usr/sbin/install_distro.sh
+rm -R -f -v /tmp/scripts
