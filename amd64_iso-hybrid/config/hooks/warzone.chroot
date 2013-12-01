@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VER="3.1.1_rc1"
+VER="3.1.1_rc3"
 
 [[ ! -d /tmp/warzone ]] && mkdir -p /tmp/warzone; cd /tmp/warzone
 wget http://downloads.sourceforge.net/project/warzone2100/releases/${VER}/warzone2100-${VER}.tar.xz
