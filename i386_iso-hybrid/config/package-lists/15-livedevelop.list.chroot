@@ -40,6 +40,7 @@ gddrescue
 gdisk
 gpart
 gnome-search-tool
+gnome-system-tools
 gptsync
 grdesktop
 grub-pc
@@ -53,10 +54,11 @@ hwinfo
 ipxe
 jfsutils
 john
-kexec-tools
+ktorrent
 ldap-utils
 lftp
 libapache2-mod-php5
+libavahi-compat-libdnssd1
 live-boot
 live-config
 lrzip
