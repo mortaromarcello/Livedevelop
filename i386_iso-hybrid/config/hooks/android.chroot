@@ -1,9 +1,9 @@
 #!/bin/bash
-VERSIONE_SDK="linux-x86-20130917"
-VERSIONE_NDK="r9"
+VERSIONE_SDK="20131030"
+VERSIONE_NDK="r9b"
 [[ ! -d /tmp/android ]] && mkdir -p /tmp/android; cd /tmp/android
 
-wget http://dl.google.com/android/adt/adt-bundle-${VERSIONE_SDK}.zip
+wget http://dl.google.com/android/adt/adt-bundle-linux-x86-${VERSIONE_SDK}.zip
 wget http://dl.google.com/android/ndk/android-ndk-${VERSIONE_NDK}-linux-x86.tar.bz2
 if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
