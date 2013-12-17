@@ -6,6 +6,7 @@ aspell-en
 autopsy
 bkhive
 abootimg
+bleachbit
 bsdutils
 btrfs-tools
 busybox
@@ -37,6 +38,7 @@ extlinux
 filezilla
 foremost
 fsarchiver
+fslint
 gddrescue
 gdisk
 gpart
