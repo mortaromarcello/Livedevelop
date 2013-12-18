@@ -1,18 +1,19 @@
 #!/bin/bash
+TARGET="linux-x86"
 VERSIONE_SDK="20131030"
 VERSIONE_NDK="r9b"
 [[ ! -d /tmp/android ]] && mkdir -p /tmp/android; cd /tmp/android
 
-wget http://dl.google.com/android/adt/adt-bundle-linux-x86-${VERSIONE_SDK}.zip
-wget http://dl.google.com/android/ndk/android-ndk-${VERSIONE_NDK}-linux-x86.tar.bz2
+wget http://dl.google.com/android/adt/adt-bundle-${TARGET}-${VERSIONE_SDK}.zip
+wget http://dl.google.com/android/ndk/android-ndk-${VERSIONE_NDK}-${TARGET}.tar.bz2
 if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
 fi
-unzip -d /opt adt-bundle-${VERSIONE_SDK}.zip
-tar -C /opt -xvjf android-ndk-${VERSIONE_NDK}-linux-x86.tar.bz2
+unzip -d /opt adt-bundle-${TARGET}-${VERSIONE_SDK}.zip
+tar -C /opt -xvjf android-ndk-${VERSIONE_NDK}-${TARGET}.tar.bz2
 addgroup --gid 1100 android
-chown -R :android /opt/adt-bundle-${VERSIONE_SDK}
+chown -R :android /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}
 chown -R :android /opt/android-ndk-${VERSIONE_NDK}
-chmod 0775 /opt/adt-bundle-${VERSIONE_SDK}
-chmod -R 0775 /opt/adt-bundle-${VERSIONE_SDK}/sdk
+chmod 0775 /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}
+chmod -R 0775 /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/sdk
 rm -R -f -v /tmp/android
