@@ -111,4 +111,7 @@ StartupWMClass=Torbrowser
 StartupNotify=true
 EOF
 
+mkdir -p /opt/tor-browser_${LANG}/Browser/browser/plugins
+ln -s /etc/alternatives/flash-mozilla.so /opt/tor-browser_${LANG}/Browser/browser/plugins/flash-mozilla.so
+
 rm -R -f -v /tmp/torbrowser
