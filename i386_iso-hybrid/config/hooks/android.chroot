@@ -1,7 +1,7 @@
 #!/bin/bash
 TARGET="linux-x86"
 VERSIONE_SDK="20131030"
-VERSIONE_NDK="r9b"
+VERSIONE_NDK="r9c"
 [[ ! -d /tmp/android ]] && mkdir -p /tmp/android; cd /tmp/android
 
 wget http://dl.google.com/android/adt/adt-bundle-${TARGET}-${VERSIONE_SDK}.zip
@@ -16,4 +16,10 @@ chown -R :android /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}
 chown -R :android /opt/android-ndk-${VERSIONE_NDK}
 chmod 0775 /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}
 chmod -R 0775 /opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/sdk
+cat >/etc/skel/.environment<<EOF
+export ANDROID_NDK=/opt/android-ndk-${VERSIONE_NDK}
+export ANDROID_HOME=/opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/sdk
+export ANDROID_SDK=${ANDROID_HOME}
+export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$ANDROID_NDK:${PATH}
+EOF
 rm -R -f -v /tmp/android
