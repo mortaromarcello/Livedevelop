@@ -51,6 +51,9 @@ libusb-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev
+libwxbase3.0-dbg
+libwxbase3.0-dev
+libwxgtk3.0-dev
 libwxgtk2.8-dev
 libwxsmithlib-dev
 kdelibs5-dev
@@ -88,7 +91,9 @@ spyder
 swig
 valac
 virtaal
-wx2.8-doc
-wx2.8-i18n
+wx3.0-doc
+wx3.0-headers
+wx3.0-i18n
+wxcrafter
 yasm
 zlib1g-dev
