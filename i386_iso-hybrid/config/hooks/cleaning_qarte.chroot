@@ -1,6 +1,0 @@
-#!/bin/bash
-
-echo "Cleanup qarte"
-apt-get purge --yes qarte-*
-apt-get autoremove --yes
-echo "done."

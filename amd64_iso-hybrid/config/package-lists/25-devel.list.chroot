@@ -77,6 +77,7 @@ patchutils
 pida
 poedit
 pyqt4-dev-tools
+python3
 python-all-dev
 python-cairo-dev
 python-gtk2-dev
@@ -92,6 +93,7 @@ swig
 valac
 virtaal
 wx3.0-doc
+wx3.0-examples
 wx3.0-headers
 wx3.0-i18n
 wxcrafter

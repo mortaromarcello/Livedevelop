@@ -1,6 +1,0 @@
-#!/bin/bash
-
-[[ ! -d /tmp/yad ]] && mkdir -p /tmp/yad; cd /tmp/yad
-svn checkout http://yad.googlecode.com/svn/trunk/ ./
-autoreconf -i && ./configure && make && make install
-rm -R -f -v /tmp/yad
