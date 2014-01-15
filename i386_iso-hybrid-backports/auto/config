@@ -13,5 +13,5 @@ lb config noauto \
 	--iso-preparer "mortaromarcello" \
 	--iso-publisher "Livedevelop Live project; mortaromarcello@gmail.com" \
 	--iso-volume "Livedevelop" \
-	--bootappend-live "boot=live config locales=it_IT.UTF-8 keyboard-layouts=it quiet splash persistence" \
+	--bootappend-live "boot=live components locales=it_IT.UTF-8 keyboard-layouts=it quiet splash persistence" \
 	"${@}"

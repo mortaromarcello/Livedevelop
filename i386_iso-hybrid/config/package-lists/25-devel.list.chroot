@@ -77,7 +77,6 @@ patchutils
 pida
 poedit
 pyqt4-dev-tools
-python3
 python-all-dev
 python-cairo-dev
 python-gtk2-dev

@@ -22,4 +22,14 @@ export ANDROID_HOME=/opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/sdk
 export ANDROID_SDK=${ANDROID_HOME}
 export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$ANDROID_NDK:${PATH}
 EOF
+cat >/usr/share/applications/eclipse.desktop<<EOF
+[Desktop Entry]
+Type=Application
+Name=Eclipse
+Comment=Eclipse Integrated Development Environment
+Icon=/opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/eclipse/icon.xpm
+Exec=/opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/eclipse/eclipse
+Terminal=false
+Categories=Development;IDE;Java;
+EOF
 rm -R -f -v /tmp/android
