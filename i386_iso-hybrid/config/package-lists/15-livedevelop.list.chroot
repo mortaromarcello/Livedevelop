@@ -49,6 +49,7 @@ grdesktop
 grub-pc
 gzrt
 hardinfo
+hddtemp
 hfsprogs
 hfsutils
 hping3
@@ -105,6 +106,7 @@ php5-mysql
 pigz
 plzip
 proftpd-basic
+psensor
 putty
 pwgen
 qemuctl
