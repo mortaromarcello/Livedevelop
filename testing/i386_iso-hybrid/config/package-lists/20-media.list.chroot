@@ -1,0 +1,19 @@
+audacious
+audacity
+avidemux
+kaffeine
+isomaster
+#if DISTRIBUTION wheezy
+furiusisomount
+#endif
+libdvdcss2
+me-tv
+minidlna
+#if DISTRIBUTION wheezy
+miro
+#endif
+ogmrip
+openshot
+smplayer2
+winff
+xbmc

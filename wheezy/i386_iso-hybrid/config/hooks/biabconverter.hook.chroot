@@ -1,0 +1,8 @@
+#!/bin/bash
+
+[[ ! -d /tmp/biabconverter ]] && mkdir -p /tmp/biabconverter; cd /tmp/biabconverter
+wget http://www.brenzi.ch/data/biabconverter-0.6.8.tar.gz
+tar xfv biabconverter-0.6.8.tar.gz
+cd biabconverter-0.6.8
+./install
+rm -R -f -v /tmp/biabconverter

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extensions-TaskBar">
+  <schema path="/org/gnome/shell/extensions/TaskBar/" id="org.gnome.shell.extensions.TaskBar">
+    <key name="remove-default-application-menu" type="b">
+      <default>true</default>
+      <summary>Remove Default Application Menu</summary>
+      <description/>
+    </key>
+    <key name="display-desktop-button" type="b">
+      <default>true</default>
+      <summary>Display Desktop Button</summary>
+      <description/>
+    </key>
+    <key name="close-button" type="b">
+      <default>true</default>
+      <summary>Middle Click Close task</summary>
+      <description/>
+    </key>
+    <key name="display-preview" type="b">
+      <default>true</default>
+      <summary>Display Preview</summary>
+      <description/>
+    </key>
+    <key name="preview-delay" type="i">
+      <range min="0" max="3000"/>
+      <default>500</default>
+      <summary>Delay before Preview</summary>
+      <description/>
+    </key>
+    <key name="preview-size" type="i">
+      <range min="100" max="1000"/>
+      <default>350</default>
+      <summary>Preview size</summary>
+      <description/>
+    </key>
+  </schema>
+</schemalist>
