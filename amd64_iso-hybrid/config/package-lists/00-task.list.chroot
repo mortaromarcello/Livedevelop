@@ -1,7 +1,0 @@
-### base system
-! Packages Priority standard
-task-gnome-desktop
-task-italian
-task-italian-desktop
-task-italian-kde-desktop
-task-laptop

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Terminal=False
-Exec=/usr/bin/leksah
-Icon=/usr/share/leksah/pics/leksah.png
-Name=Leksah
-Comment=An integrated development environement (IDE) for the programming language Haskell and the Glasgow Haskell Compiler
-Categories=Development
-X-GNOME-Autostart-enabled=False
