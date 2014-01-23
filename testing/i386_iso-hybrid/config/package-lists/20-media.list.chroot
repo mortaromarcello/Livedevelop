@@ -9,6 +9,7 @@ furiusisomount
 libdvdcss2
 me-tv
 minidlna
+mkvtoolnix-gui
 #if DISTRIBUTION wheezy
 miro
 #endif

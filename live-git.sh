@@ -19,17 +19,17 @@ dpkg -i live-config{_,-sysvinit,-doc}*.deb
 
 rm -f ${LIVEDEVELOP}/config/packages.chroot/live-build_*.deb
 rm -f ${LIVEDEVELOP}/config/packages.chroot/live-{boot,config,tools}*.deb
-rm -f ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/live-build_*.deb
-rm -f ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/live-{boot,config,tools}*.deb
+rm -f ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/live-build_*.deb
+rm -f ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/live-{boot,config,tools}*.deb
 
 cp live-build_*.deb ${LIVEDEVELOP}/config/packages.chroot/
 cp live-tools_*.deb ${LIVEDEVELOP}/config/packages.chroot/
 cp live-boot{_,-initramfs-tools,-doc}*.deb ${LIVEDEVELOP}/config/packages.chroot/
 cp live-config{_,-sysvinit,-doc}*.deb  ${LIVEDEVELOP}/config/packages.chroot/
 
-cp live-build_*.deb ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/
-cp live-tools_*.deb ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/
-cp live-boot{_,-initramfs-tools,-doc}*.deb  ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/
-cp live-config{_,-sysvinit,-doc}*.deb  ${LIVEDEVELOP_GIT}/testing/i386_iso-hybrid/config/packages.chroot/
+cp live-build_*.deb ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/
+cp live-tools_*.deb ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/
+cp live-boot{_,-initramfs-tools,-doc}*.deb  ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/
+cp live-config{_,-sysvinit,-doc}*.deb  ${LIVEDEVELOP_GIT}/i386_iso-hybrid/config/packages.chroot/
 
 rm -R -f -v /tmp/live
