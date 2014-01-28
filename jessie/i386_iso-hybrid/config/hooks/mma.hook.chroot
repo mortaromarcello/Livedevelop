@@ -1,8 +1,10 @@
 #!/bin/bash
+TMP="/tmp/mma"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 
-[[ ! -d /tmp/mma ]] && mkdir -p /tmp/mma; cd /tmp/mma
 git clone https://github.com/mortaromarcello/mma.git
 cd mma
 ./install.sh
-rm -R -f /tmp/mma
+
+rm -R -f ${TMP}
 

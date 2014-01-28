@@ -1,6 +1,6 @@
 #!/bin/bash
-
-[[ ! -d /tmp/bashdb ]] && mkdir -p /tmp/bashdb; cd /tmp/bashdb
+TMP="/tmp/bashdb"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 
 VERSION=4.2-0.8
 wget http://downloads.sourceforge.net/project/bashdb/bashdb/${VERSION}/bashdb-${VERSION}.tar.bz2
@@ -8,4 +8,4 @@ tar xfv bashdb-${VERSION}.tar.bz2
 cd bashdb-${VERSION}
 ./configure && make && make check && make install
 
-rm -R -f -v /tmp/bashdb
+rm -R -f -v ${TMP}

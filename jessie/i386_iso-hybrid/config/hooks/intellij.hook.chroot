@@ -1,6 +1,6 @@
 #!/bin/bash
-
-[[ ! -d /tmp/intellij ]] && mkdir -p /tmp/intellij; cd /tmp/intellij
+TMP="/tmp/intellij"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 
 wget http://download.jetbrains.com/idea/ideaIC-13.0.1.tar.gz
 tar -C /opt -xvf ideaIC-13.0.1.tar.gz
@@ -13,4 +13,5 @@ Terminal=false
 Categories=Development;IDE;Java;
 Icon=/opt/idea-IC-133.331/bin/idea.png
 EOF
-rm -R -f -v /tmp/intellij
+
+rm -R -f -v ${TMP}
