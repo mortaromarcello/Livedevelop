@@ -23,7 +23,7 @@ cat >/etc/skel/.environment<<EOF
 export ANDROID_NDK=${ANDROID_NDK}
 export ANDROID_HOME=${ANDROID_HOME}
 export ANDROID_SDK=${ANDROID_SDK}
-export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_NDK}:\$PATH
+export PATH=\$ANDROID_HOME/tools:\$ANDROID_HOME/platform-tools:\$ANDROID_NDK:\$PATH
 EOF
 cat >/usr/share/applications/eclipse.desktop<<EOF
 [Desktop Entry]
