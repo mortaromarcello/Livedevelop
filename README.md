@@ -12,7 +12,7 @@ Per costruire Livedevelop usando live-build bisogna prima avere questi pre-requi
 git clone https://github.com/mortaromarcello/Livedevelop.git
 ```
 ## Istruzioni per la creazione dell'imagine iso:
-Entra nella directory 'Livedevelop/jessie/i386_iso-hybrid' ed esegui i seguenti comandi (se non hai installato o non sei abilitato a `sudo` devi cambiare lo user in root con il comando `su` e tralasciare il comando `sudo`):
+Entra nella directory:`cd Livedevelop/jessie/i386_iso-hybrid` ed esegui i seguenti comandi (se non hai installato o non sei abilitato a `sudo` devi cambiare lo user in root con il comando `su` e tralasciare il comando `sudo`):
 ```
 sudo ./build.sh
 ```
