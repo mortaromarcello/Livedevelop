@@ -2,16 +2,18 @@
 TMP="/tmp/intellij"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 
-wget http://download.jetbrains.com/idea/ideaIC-13.0.1.tar.gz
-tar -C /opt -xvf ideaIC-13.0.1.tar.gz
+VER="13.0.2"
+BUILD="133.696"
+wget http://download.jetbrains.com/idea/ideaIC-${VER}.tar.gz
+tar -C /opt -xvf ideaIC-${VER}.tar.gz
 cat > /usr/share/applications/intellijidea.desktop <<EOF
 [Desktop Entry]
 Type=Application
 Name=IntellijIDEA
-Exec=/opt/idea-IC-133.331/bin/idea.sh
+Exec=/opt/idea-IC-${BUILD}/bin/idea.sh
 Terminal=false
 Categories=Development;IDE;Java;
-Icon=/opt/idea-IC-133.331/bin/idea.png
+Icon=/opt/idea-IC-${BUILD}/bin/idea.png
 EOF
 
 rm -R -f -v ${TMP}
