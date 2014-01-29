@@ -22,17 +22,17 @@ sudo ./build.sh
 ```
 ===========
 ## Elenco programmi che non fanno parte di Debian:
-Eclipse for Android         (IDE Android)
-Android ndk
-bashdb                      (Debugger per fils bash)
-biabconverter               (un  programma che converte i files di band-in-a-box in mma 'Musical Midi Accompaniment')
-Glade-3                     (la vecchia versione di Glade per gnome 2 e Gtk 2)
-IntelliJ IDEA 13            (IDE per java)
-Linuxband                   (un programma che esegue files mma, simile ad band-in-a-box)
-Musical Midi Accompaniment  (Generatore di accompagnamenti musicali)
-Sakis3G                     (gestore di chiavette 3g)
-Tor Browser                 (Fork di Firefox per navigare sotto reti Tor in anonimato)
-WarZone 2001                (Gioco di ruolo spaziale)
-Yad                         (Un fork di Zenity con molte funzioni avanzate)
+- Eclipse for Android         (IDE Android)
+- Android ndk
+- bashdb                      (Debugger per fils bash)
+- biabconverter               (un  programma che converte i files di band-in-a-box in mma 'Musical Midi Accompaniment')
+- Glade-3                     (la vecchia versione di Glade per gnome 2 e Gtk 2)
+- IntelliJ IDEA 13            (IDE per java versione Community)
+- Linuxband                   (un programma che esegue files mma, simile ad band-in-a-box)
+- Musical Midi Accompaniment  (Generatore di accompagnamenti musicali)
+- Sakis3G                     (gestore di chiavette 3g)
+- Tor Browser                 (Fork di Firefox per navigare sotto reti Tor in anonimato)
+- WarZone 2001                (Gioco di ruolo spaziale)
+- Yad                         (Un fork di Zenity con molte funzioni avanzate)
 
 
