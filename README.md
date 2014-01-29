@@ -38,6 +38,7 @@ sudo ./build.sh
 - WarZone 2001                (Gioco di ruolo spaziale)
 - Yad                         (Un fork di Zenity con molte funzioni avanzate)
 - WxCrafter
+
 ## Elenco programmi per lo sviluppo
 - Codeblocks 
 - Anjuta
