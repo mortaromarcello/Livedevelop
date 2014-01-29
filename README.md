@@ -1,6 +1,6 @@
 Livedevelop
 ===========
-Ho sviluppato questa distro per una mio bisogno personale, infatti contiene anche programmi e drivers adattati per le mie particolari esigenze. La distro è stata concepita per programmatori/musicisti/manutentori con i programmi più usati allo scopo. Ho inserito anche diversi programmi che la distro Debian non comprende mano a mano che ne vedevo l'utilità. La Live è basata su Debian jessie (testing). Per ora sto mantenendo solo questa versione. Chi volesse costruire la sua propria live deve seguire queste istruzioni:
+Ho sviluppato questa distro Live per una mio bisogno personale, infatti contiene anche programmi e drivers adattati per le mie particolari esigenze. La distro è stata concepita per programmatori/musicisti/manutentori con i programmi più usati allo scopo. Ho inserito anche diversi programmi che la distro Debian non comprende mano a mano che ne vedevo l'utilità. La Live è basata su Debian jessie (testing). Per ora sto mantenendo solo questa versione. Chi volesse costruire la sua propria live deve seguire queste istruzioni:
 ## Pre-requisiti per live-build
 Per costruire Livedevelop usando live-build bisogna prima avere questi pre-requisiti:
 - Usare un sistema Debian testing aggiornato. 
