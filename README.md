@@ -4,7 +4,8 @@ Ho sviluppato questa distro per una mio bisogno personale, infatti contiene anch
 ## Pre-requisiti per live-build
 Per costruire Livedevelop usando live-build bisogna prima avere questi pre-requisiti:
 - Usare un sistema Debian testing aggiornato. 
-- Avere installato il programma git: `apt-get install git` 
+- Avere installato il programma git: `apt-get install git`
+
 ## Clonare il repository
 - Dalla directory in cui vuoi clonare il repository esegui il seguente comando:
 ```
