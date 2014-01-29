@@ -26,7 +26,10 @@ sudo ./build.sh
 - Android ndk
 - bashdb                      (Debugger per fils bash)
 - biabconverter               (un  programma che converte i files di band-in-a-box in mma 'Musical Midi Accompaniment')
+- Codelite                    (Dal repository ufficiale)
+- Clonezilla                  (Dal repository ufficiale)
 - Glade-3                     (la vecchia versione di Glade per gnome 2 e Gtk 2)
+- Google Talk
 - IntelliJ IDEA 13            (IDE per java versione Community)
 - Linuxband                   (un programma che esegue files mma, simile ad band-in-a-box)
 - Musical Midi Accompaniment  (Generatore di accompagnamenti musicali)
@@ -34,5 +37,78 @@ sudo ./build.sh
 - Tor Browser                 (Fork di Firefox per navigare sotto reti Tor in anonimato)
 - WarZone 2001                (Gioco di ruolo spaziale)
 - Yad                         (Un fork di Zenity con molte funzioni avanzate)
+- WxCrafter
+## Elenco programmi per lo sviluppo
+- Codeblocks 
+- Anjuta
+- Lazarus
+- Kdevelop
+- QtCreator
+- Geany
+- Boa Contructor
+- Eric
+- Glade
+- Gtranslator
+- Leksah
+- Meld
+- MonoDevelop
+- NetBeans
+- Openjdk-7-Jdk
+- Pida
+- PoEdit
+- Spe
+- Spyder
+- Virtaal
+- Yasm
 
+## elenco programmi multimediali
+- Audacious
+- Audacity
+- Avidemux
+- Gnome Subtitles
+- Kaffeine
+- Isomaster
+- Me-Tv
+- Mktoolnix-gui
+- Ogmrip
+- Openshot
+- Smplayer2
+- Vlc
+- Winff
+- Xbmc
 
+## Elenco programmi musicali
+- Hydrogen
+- Musescore
+- Rosegarden
+- Qsynth
+- QjackCtl
+
+## Elenco utilità varie
+- Apache2
+- Aqemu
+- Bleachbit
+- Calibre
+- Chromium
+- Etherape
+- Etherwake
+- Filezilla
+- Gparted
+- Heimdall
+- K3b
+- Kpartx
+- Ktorrent
+- Midnight Commander
+- Ophcrack
+- Partclone
+- PartitionManager
+- PdfChain
+- PdfSam
+- Psensor
+- Qemu
+- Samba
+- StarDict
+- Unison-Gtk
+- Virtualbox
+- Wine
+- Wireshark
