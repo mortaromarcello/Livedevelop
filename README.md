@@ -11,8 +11,15 @@ Per costruire Livedevelop usando live-build bisogna prima avere questi pre-requi
 ```
 git clone https://github.com/mortaromarcello/Livedevelop.git
 ```
+- Aggiornare o installare il live system (se non hai installato o non sei abilitato a `sudo` devi cambiare lo user in root con il comando `su` e tralasciare il comando `sudo`):
+```
+sudo dpkg -i Livedevelop/jessie/i386_iso-hybrid/config/packages.chroot/live-build_*.deb
+sudo dpkg -i Livedevelop/jessie/i386_iso-hybrid/config/packages.chroot/live-boot{_,-initramfs-tools,-doc}*.deb
+sudo dpkg -i Livedevelop/jessie/i386_iso-hybrid/config/packages.chroot/live-config{_,-sysvinit,-doc}*.deb
+sudo dpkg -i Livedevelop/jessie/i386_iso-hybrid/config/packages.chroot/live-manual-html*.deb
+```
 ## Istruzioni per la creazione dell'imagine iso:
-Entra nella directory:`cd Livedevelop/jessie/i386_iso-hybrid` ed esegui i seguenti comandi (se non hai installato o non sei abilitato a `sudo` devi cambiare lo user in root con il comando `su` e tralasciare il comando `sudo`):
+Entra nella directory:`cd Livedevelop/jessie/i386_iso-hybrid` ed esegui i seguenti comandi:
 ```
 sudo ./build.sh
 ```
