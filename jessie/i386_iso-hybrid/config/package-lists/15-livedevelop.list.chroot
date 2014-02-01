@@ -52,7 +52,7 @@ gzrt
 hardinfo
 #endif
 hddtemp
-#if DISTRIBUTION testing
+#if DISTRIBUTION jessie
 heimdall-flash
 heimdall-flash-frontend
 #endif
