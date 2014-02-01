@@ -90,7 +90,9 @@ mkswap-uuid
 myrescue
 mysql-server
 mysql-client
+#if DISTRIBUTION wheezy
 ncpfs
+#endif
 netsed
 nautilus-open-terminal
 nfs-kernel-server
