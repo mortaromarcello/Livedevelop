@@ -52,10 +52,8 @@ gzrt
 hardinfo
 #endif
 hddtemp
-#if DISTRIBUTION jessie
 heimdall-flash
 heimdall-flash-frontend
-#endif
 hfsprogs
 hfsutils
 hping3
