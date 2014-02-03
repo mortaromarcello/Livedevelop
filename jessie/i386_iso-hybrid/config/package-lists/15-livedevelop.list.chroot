@@ -1,6 +1,7 @@
 ### Livedevelop packages
 agedu
 apache2
+aqemu
 aspell-en
 autopsy
 bkhive
@@ -114,6 +115,7 @@ proftpd-basic
 psensor
 putty
 pwgen
+qemu
 recoverdm
 refit
 reglookup
