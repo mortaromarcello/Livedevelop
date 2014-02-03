@@ -1,0 +1,12 @@
+#!/bin/bash
+TMP="/tmp/aqemu"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+
+git clone git://git.code.sf.net/p/aqemu/code aqemu
+cd aqemu
+apt-get -y install libvncserver-dev
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DMAN_PAGE_COMPRESSOR=bzip2 ./
+make && make install
+apt-get -y purge libvncserver-dev && apt-get -y autoremove --purge
+
+rm -R -f -v ${TMP}
