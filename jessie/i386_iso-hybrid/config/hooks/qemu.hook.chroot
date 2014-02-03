@@ -4,6 +4,13 @@ TMP="/tmp/qemu"
 git clone https://github.com/mortaromarcello/qemu.git
 cd qemu
 git submodule update --init dtc
+./configure --target-list="arm-softmmu i386-softmmu m68k-softmmu ppc-softmmu ppcemb-softmmu arm-linux-user armeb-linux-user i386-linux-user m68k-linux-user mips-linux-user ppc-linux-user"
 make && make install
+cat > /usr/local/bin/qemu-raspberry.sh <<EOF
+#!/bin/sh
+[ $# -lt 2 ] && echo -e "\$0 <kernel_image> <sd_image>" && exit
+qemu-system-arm -kernel \$1 -cpu arm1176 -m 512 -M raspi -no-reboot -serial stdio -append "rw earlyprintk loglevel=8 panic=120 keep_bootcon rootwait dma.dmachans=0x7f35 bcm2708_fb.fbwidth=1024 bcm2708_fb.fbheight=768 bcm2708.boardrev=0xf bcm2708.serial=0xcad0eedf smsc95xx.macaddr=B8:27:EB:D0:EE:DF sdhci-bcm2708.emmc_clock_freq=100000000 vc_mem.mem_base=0x1c000000 vc_mem.mem_size=0x20000000  dwc_otg.lpm_enable=0 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait" -sd \$2 -device usb-kbd -device usb-mouse
+EOF
+chmod +x /usr/local/bin/qemu-raspberry.sh
 
 rm -R -f -v ${TMP}
