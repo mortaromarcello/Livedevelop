@@ -15,7 +15,7 @@ Name=Heimdall Frontend
 Type=Application
 Icon=/usr/share/icons/heimdall-frontend/heimdall-frontend.png
 Exec=/usr/local/bin/heimdall-frontend
-Categories=Utils
+Categories=GNOME;Utility;
 Terminal=false
 EOF
 

@@ -116,6 +116,7 @@ psensor
 putty
 pwgen
 qemu
+qemu-kvm
 recoverdm
 refit
 reglookup
