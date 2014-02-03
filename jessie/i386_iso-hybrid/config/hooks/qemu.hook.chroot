@@ -1,0 +1,9 @@
+#!/bin/bash
+TMP="/tmp/qemu"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+git clone https://github.com/mortaromarcello/qemu.git
+cd qemu
+git submodule update --init dtc
+make && make install
+
+rm -R -f -v ${TMP}
