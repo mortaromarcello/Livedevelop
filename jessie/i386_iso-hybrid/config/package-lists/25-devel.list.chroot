@@ -96,6 +96,8 @@ ruby-gnome2
 #endif
 spe
 spyder
+sqlite
+sqlite3
 swig
 valac
 virtaal
