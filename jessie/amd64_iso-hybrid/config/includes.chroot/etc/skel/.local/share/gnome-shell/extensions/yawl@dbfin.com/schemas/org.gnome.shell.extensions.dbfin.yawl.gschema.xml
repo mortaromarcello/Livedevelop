@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extension-yawl">
+  <schema path="/org/gnome/shell/extensions/dbfin/yawl/" id="org.gnome.shell.extensions.dbfin.yawl">
+    <key type="b" name="first-time">
+      <default>true</default>
+      <summary>Whether the extension is run for the first time.</summary>
+      <description>Whether the extension is run for the first time.</description>
+    </key>
+    <key type="b" name="advanced">
+      <default>false</default>
+      <summary>Whether to show advanced preferences.</summary>
+      <description>Whether to show advanced preferences.</description>
+    </key>
+    <key type="s" name="icons-order">
+      <default>'[]'</default>
+      <summary>YAWL-panel icons stable sequence.</summary>
+      <description>New icons are shown according to this sequence or at the end.</description>
+    </key>
+    <key type="b" name="icons-show-all">
+      <default>true</default>
+      <summary>Whether to show icons from all workspaces.</summary>
+      <description>If true icons form all workspaces are shown.</description>
+    </key>
+    <key type="s" name="yawl-panel-position">
+      <default>'21'</default>
+      <summary>YAWL-panel position in percentage.</summary>
+      <description>The position of the left side of the YAWL panel as percentage of the top panel width.</description>
+    </key>
+    <key type="s" name="yawl-panel-width">
+      <default>'100'</default>
+      <summary>YAWL-panel width in percentage.</summary>
+      <description>The width of the YAWL panel as percentage of the top panel width.</description>
+    </key>
+    <key type="b" name="move-center">
+      <default>true</default>
+      <summary>Move central panel to the right.</summary>
+      <description>If true the central panel is moved to the right.</description>
+    </key>
+    <key type="b" name="hide-activities">
+      <default>false</default>
+      <summary>Hide Activities button.</summary>
+      <description>If true the Activities button is hidden.</description>
+    </key>
+    <key type="b" name="preserve-hot-corner">
+      <default>true</default>
+      <summary>Preserve Hot Corner.</summary>
+      <description>If true the Hot Corner is available even if the Activities button is hidden.</description>
+    </key>
+    <key type="b" name="hide-app-menu">
+      <default>false</default>
+      <summary>Hide AppMenu button.</summary>
+      <description>If true the AppMenu button is hidden.</description>
+    </key>
+    <key type="b" name="panel-background">
+      <default>false</default>
+      <summary>Custom panel background.</summary>
+      <description>If true the top panel is painted with custom color and opacity.</description>
+    </key>
+    <key type="s" name="panel-top-color">
+      <default>'#212133'</default>
+      <summary>Choose custom panel top color.</summary>
+      <description>Custom color to paint top of the panel.</description>
+    </key>
+    <key type="s" name="panel-top-opacity">
+      <default>'75'</default>
+      <summary>Choose custom panel top opacity.</summary>
+      <description>Custom opacity to paint top of the panel.</description>
+    </key>
+    <key type="s" name="panel-color">
+      <default>'#000000'</default>
+      <summary>Choose custom panel color.</summary>
+      <description>Custom color to paint the panel.</description>
+    </key>
+    <key type="s" name="panel-opacity">
+      <default>'75'</default>
+      <summary>Choose custom panel opacity.</summary>
+      <description>Custom opacity to paint the panel.</description>
+    </key>
+
+    <key type="s" name="icons-size">
+      <default>'32'</default>
+      <summary>Size of application icons.</summary>
+      <description>The size of application icons. The size is adjusted to be divisible by 8.</description>
+    </key>
+    <key type="b" name="icons-faded">
+      <default>false</default>
+      <summary>Use faded icons.</summary>
+      <description>Whether to use faded icons (like AppMenu button).</description>
+    </key>
+    <key type="s" name="icons-opacity">
+      <default>'84'</default>
+      <summary>Default icons opacity.</summary>
+      <description>Icon opacity when not hovered (and when hovered if not otherwise set).</description>
+    </key>
+    <key type="s" name="icons-opacity-other">
+      <default>'42'</default>
+      <summary>Opacity of app icons not on current workspace.</summary>
+      <description>Opacity of app icons not on current workspace.</description>
+    </key>
+    <key type="s" name="icons-opacity-inactive">
+      <default>'42'</default>
+      <summary>Opacity of not running favorite app icons.</summary>
+      <description>Opacity of not running favorite app icons.</description>
+    </key>
+    <key type="s" name="icons-clip-top">
+      <default>'0'</default>
+      <summary>Clip icons: top (px).</summary>
+      <description>Clip icons on top (in pixels).</description>
+    </key>
+    <key type="s" name="icons-clip-bottom">
+      <default>'0'</default>
+      <summary>Clip icons: bottom (px).</summary>
+      <description>Clip icons on bottom (in pixels).</description>
+    </key>
+    <key type="s" name="icons-align">
+      <default>'0'</default>
+      <summary>Align icons on the panel.</summary>
+      <description>Icons center alignment on the panel (%).</description>
+    </key>
+    <key type="s" name="icons-distance">
+      <default>'11'</default>
+      <summary>Distance between icons (%).</summary>
+      <description>Distance between two icons as % of the icon size.</description>
+    </key>
+
+    <key type="s" name="icons-animation-time">
+      <default>'333'</default>
+      <summary>Icons animation time.</summary>
+      <description>Icons animation time in ms. If 0 then no animation is used.</description>
+    </key>
+    <key type="s" name="icons-animation-effect">
+      <default>'1'</default>
+      <summary>Icons animation effect.</summary>
+      <description>Icons animation effect.</description>
+    </key>
+    <key type="b" name="icons-hover-animation">
+      <default>true</default>
+      <summary>Whether to animate icons when hovered.</summary>
+      <description>If true icons are animated (changing size etc.) when hovered.</description>
+    </key>
+    <key type="s" name="icons-hover-size">
+      <default>'100'</default>
+      <summary>Size of hovered icon (% relative to unhovered).</summary>
+      <description>Defines the size of the hovered icon in % relative to the unhovered one.</description>
+    </key>
+    <key type="s" name="icons-hover-opacity">
+      <default>'100'</default>
+      <summary>Opacity of hovered icon.</summary>
+      <description>Defines the opacity of the hovered icon.</description>
+    </key>
+    <key type="b" name="icons-hover-fit">
+      <default>false</default>
+      <summary>Whether to show full icon when hovered.</summary>
+      <description>If true icons are shown full width when hovered.</description>
+    </key>
+    <key type="s" name="icons-hover-animation-time">
+      <default>'33'</default>
+      <summary>Icons on hover animation time (%).</summary>
+      <description>Icons animation time when hovered as % of animation time.</description>
+    </key>
+    <key type="s" name="icons-hover-animation-effect">
+      <default>'3'</default>
+      <summary>Icons on hover animation effect.</summary>
+      <description>Icons animation effect when hovered.</description>
+    </key>
+    <key type="b" name="icons-overview-show">
+      <default>true</default>
+      <summary>Whether to show icons in Overview.</summary>
+      <description>If true icons are shown in Overview.</description>
+    </key>
+
+    <key type="b" name="windows-show">
+      <default>true</default>
+      <summary>Whether to show thumbnails.</summary>
+      <description>If true the thumbnails of an application are shown when the app icon is hovered over.</description>
+    </key>
+    <key type="b" name="windows-show-interesting">
+      <default>false</default>
+      <summary>Whether to show thumbnails of interesting windows only.</summary>
+      <description>If true only the thumbnails of so-called interesting windows are shown.</description>
+    </key>
+    <key type="b" name="windows-indicator-arrow">
+      <default>false</default>
+      <summary>Whether to use arrow-style thumbnail application indicator.</summary>
+      <description>If true the indicator of the current thumbnails application is drawn as an arrow.</description>
+    </key>
+    <key type="b" name="windows-theming">
+      <default>true</default>
+      <summary>Whether to apply thumbnail theming.</summary>
+      <description>If true thumbnails a drawn using windows-padding etc.</description>
+    </key>
+    <key type="b" name="windows-background-panel">
+      <default>true</default>
+      <summary>Whether to paint thumbnail panel with main panel background.</summary>
+      <description>If true thumbnail panel background matches main panel background.</description>
+    </key>
+    <key type="s" name="windows-background-color">
+      <default>'#2e3436'</default>
+      <summary>Window thumbnail panel background color.</summary>
+      <description>Window thumbnail panel background color.</description>
+    </key>
+    <key type="s" name="windows-background-opacity">
+      <default>'75'</default>
+      <summary>Window thumbnail panel background opacity.</summary>
+      <description>Window thumbnail panel background background opacity.</description>
+    </key>
+    <key type="s" name="windows-text-color">
+      <default>''</default>
+      <summary>Window thumbnail panel text color.</summary>
+      <description>Window thumbnail panel text color.</description>
+    </key>
+    <key type="s" name="windows-text-size">
+      <default>'9'</default>
+      <summary>Window thumbnail panel text size (pt).</summary>
+      <description>Window thumbnail panel text size in pt.</description>
+    </key>
+    <key type="s" name="windows-border-color">
+      <default>'#d3d7cf'</default>
+      <summary>Window thumbnail border color.</summary>
+      <description>Window thumbnail border color.</description>
+    </key>
+    <key type="s" name="windows-border-width">
+      <default>'2'</default>
+      <summary>Window thumbnail border width.</summary>
+      <description>Window thumbnail border width.</description>
+    </key>
+    <key type="s" name="windows-border-radius">
+      <default>'5'</default>
+      <summary>Window thumbnail border radius.</summary>
+      <description>Window thumbnail border radius.</description>
+    </key>
+    <key type="s" name="windows-padding">
+      <default>'11'</default>
+      <summary>Window thumbnail padding.</summary>
+      <description>Window thumbnail padding.</description>
+    </key>
+
+    <key type="b" name="windows-thumbnails-fit-height">
+      <default>false</default>
+      <summary>Whether to show all thumbnails same height.</summary>
+      <description>If true then all thumbnails are same height.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-width">
+      <default>'248'</default>
+      <summary>Width of window thumbnails.</summary>
+      <description>The width of window thumbnails.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-height">
+      <default>'160'</default>
+      <summary>Height of window thumbnails.</summary>
+      <description>The height of window thumbnails.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-height-visible">
+      <default>'160'</default>
+      <summary>Window thumbnail maximum visible height.</summary>
+      <description>Window thumbnail maximum visible height.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-opacity">
+      <default>'84'</default>
+      <summary>Default window thumbnails opacity.</summary>
+      <description>Window thumbnails opacity when not hovered.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-minimized-opacity">
+      <default>'42'</default>
+      <summary>Default minimized window thumbnails opacity.</summary>
+      <description>Minimized window thumbnails opacity when not hovered.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-distance">
+      <default>'11'</default>
+      <summary>Distance between window thumbnails (%).</summary>
+      <description>Distance between window thumbnails as % of their widths.</description>
+    </key>
+    <key type="s" name="windows-thumbnails-padding-top">
+      <default>'7'</default>
+      <summary>Thumbnail top padding (px).</summary>
+      <description>Thumbnail top padding in pixels.</description>
+    </key>
+
+    <key type="s" name="windows-show-delay">
+      <default>'400'</default>
+      <summary>Window thumbnails showing delay (in ms).</summary>
+      <description>Window thumbnails showing delay time in ms.</description>
+    </key>
+    <key type="s" name="windows-animation-time">
+      <default>'333'</default>
+      <summary>Windows animation time.</summary>
+      <description>Windows animation time in ms. If 0 then no animation is used.</description>
+    </key>
+    <key type="s" name="windows-animation-effect">
+      <default>'3'</default>
+      <summary>Windows animation effect.</summary>
+      <description>Windows animation effect.</description>
+    </key>
+    <key type="s" name="windows-hover-opacity">
+      <default>'100'</default>
+      <summary>Opacity of hovered window thumbnails.</summary>
+      <description>Defines the opacity of the hovered window thumbnail.</description>
+    </key>
+    <key type="b" name="windows-hover-fit">
+      <default>true</default>
+      <summary>Whether to show full window thumbnail when hovered.</summary>
+      <description>If true window thuumbnails are shown full width when hovered.</description>
+    </key>
+    <key type="s" name="windows-hover-animation-time">
+      <default>'144'</default>
+      <summary>Window thumbnails on hover animation time (%).</summary>
+      <description>Window thumbnails animation time when hovered as % of animation time.</description>
+    </key>
+    <key type="s" name="windows-hover-animation-effect">
+      <default>'3'</default>
+      <summary>Window thumbnails on hover animation effect.</summary>
+      <description>Window thumbnails animation effect when hovered.</description>
+    </key>
+
+    <key type="s" name="mouse-app-left">
+      <default>'2'</default>
+      <summary>App left click/double click function.</summary>
+      <description>App left click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-left-ctrl">
+      <default>'8'</default>
+      <summary>App ctrl-left click/double click function.</summary>
+      <description>App ctrl-left click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-left-shift">
+      <default>'6'</default>
+      <summary>App shift-left click/double click function.</summary>
+      <description>App shift-left click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-left-ctrl-shift">
+      <default>'0'</default>
+      <summary>App ctrl-shift-left click/double click function.</summary>
+      <description>App ctrl-shift-left click/double click function.</description>
+    </key>
+
+    <key type="s" name="mouse-app-middle">
+      <default>'9'</default>
+      <summary>App middle click/double click function.</summary>
+      <description>App middle click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-middle-ctrl">
+      <default>'9'</default>
+      <summary>App ctrl-middle click/double click function.</summary>
+      <description>App ctrl-middle click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-middle-shift">
+      <default>'7'</default>
+      <summary>App shift-middle click/double click function.</summary>
+      <description>App shift-middle click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-middle-ctrl-shift">
+      <default>'0'</default>
+      <summary>App ctrl-shift-middle click/double click function.</summary>
+      <description>App ctrl-shift-middle click/double click function.</description>
+    </key>
+    <key type="s" name="mouse-app-scroll">
+      <default>'4'</default>
+      <summary>App mouse scroll function.</summary>
+      <description>App mouse scroll function.</description>
+    </key>
+    <key type="b" name="mouse-app-scroll-no-launch">
+      <default>false</default>
+      <summary>Do not launch apps with scroll.</summary>
+      <description>Do not launch apps with scroll.</description>
+    </key>
+
+    <key type="s" name="mouse-app-right">
+      <default>'10'</default>
+      <summary>App right click/double click function.</summary>
+      <description>App right click/double click function.</description>
+    </key>
+
+    <key type="s" name="mouse-window-left">
+      <default>'1'</default>
+      <summary>Window left click function.</summary>
+      <description>Window left click function.</description>
+    </key>
+    <key type="s" name="mouse-window-left-ctrl">
+      <default>'0'</default>
+      <summary>Window ctrl-left click function.</summary>
+      <description>Window ctrl-left click function.</description>
+    </key>
+    <key type="s" name="mouse-window-left-shift">
+      <default>'2'</default>
+      <summary>Window shift-left click function.</summary>
+      <description>Window shift-left click function.</description>
+    </key>
+    <key type="s" name="mouse-window-left-ctrl-shift">
+      <default>'0'</default>
+      <summary>Window ctrl-shift-left click function.</summary>
+      <description>Window ctrl-shift-left click function.</description>
+    </key>
+    <key type="s" name="mouse-window-middle">
+      <default>'3'</default>
+      <summary>Window middle click function.</summary>
+      <description>Window middle click function.</description>
+    </key>
+    <key type="s" name="mouse-window-scroll-up">
+      <default>'5'</default>
+      <summary>Window mouse scroll up function.</summary>
+      <description>Window mouse scroll up function.</description>
+    </key>
+    <key type="s" name="mouse-window-scroll-down">
+      <default>'6'</default>
+      <summary>Window mouse scroll down function.</summary>
+      <description>Window mouse scroll down function.</description>
+    </key>
+    <key type="s" name="mouse-window-right">
+      <default>'2'</default>
+      <summary>Window right click function.</summary>
+      <description>Window right click function.</description>
+    </key>
+
+    <key type="b" name="mouse-drag-and-drop">
+      <default>true</default>
+      <summary>Whether to use drag-and-drop.</summary>
+      <description>If true mouse drag-and-drop events will be send as well.</description>
+    </key>
+    <key type="b" name="mouse-click-release">
+      <default>true</default>
+      <summary>Whether to send clicks on mouse release.</summary>
+      <description>If true mouse clicks are sent when mouse button is released rather than pressed.</description>
+    </key>
+    <key type="b" name="mouse-long-click">
+      <default>true</default>
+      <summary>Whether to emulate right-click with long left-click.</summary>
+      <description>If true long mouse left button click emulates mouse right button click.</description>
+    </key>
+    <key type="s" name="mouse-scroll-timeout">
+      <default>'125'</default>
+      <summary>Mouse single scroll time.</summary>
+      <description>Mouse single scroll time (to prevent multiple scrolls).</description>
+    </key>
+    <key type="s" name="mouse-clicks-time-single">
+      <default>'533'</default>
+      <summary>Single clicks time.</summary>
+      <description>Single clicks time.</description>
+    </key>
+    <key type="s" name="mouse-clicks-time-double">
+      <default>'300'</default>
+      <summary>Double clicks time.</summary>
+      <description>Double clicks time.</description>
+    </key>
+    <key type="s" name="mouse-clicks-time-threshold">
+      <default>'377'</default>
+      <summary>Mouse single/double clicks time threshold.</summary>
+      <description>Mouse single/double clicks time threshold.</description>
+    </key>
+
+    <key type="b" name="animation-disable">
+      <default>false</default>
+      <summary>Whether to disable all animation.</summary>
+      <description>Whether to disable all animation.</description>
+    </key>
+    <key type="b" name="animation-alternative-test">
+      <default>false</default>
+      <summary>Whether to use alternative animation engine.</summary>
+      <description>Whether to use alternative animation engine.</description>
+    </key>
+    <key type="s" name="animation-alternative-fps">
+      <default>'33'</default>
+      <summary>Alternative animation engine fps.</summary>
+      <description>Alternative animation engine fps.</description>
+    </key>
+
+    <key type="b" name="debug">
+      <default>false</default>
+      <summary>Whether to open debug window.</summary>
+      <description>Whether to open debug window.</description>
+    </key>
+    <key type="b" name="debug-bottom">
+      <default>false</default>
+      <summary>Whether to place debug window at the bottom of the first monitor.</summary>
+      <description>If true then the debug window is placed at the bottom of the first monitor.</description>
+    </key>
+    <key type="s" name="debug-width">
+      <default>'33'</default>
+      <summary>Debug window width as % of the monitor width.</summary>
+      <description>Debug window width as % of the monitor width.</description>
+    </key>
+    <key type="b" name="debug-force">
+      <default>false</default>
+      <summary>Whether to force all debug messages.</summary>
+      <description>Whether to force all debug messages.</description>
+    </key>
+
+    <key type="b" name="icons-drag-and-drop">
+      <default>true</default>
+      <summary>Rearrange icons using mouse.</summary>
+      <description>Rearrange icons on the panel using mouse.</description>
+    </key>
+    <key type="b" name="mouse-scroll-workspace">
+      <default>true</default>
+      <summary>Mouse scroll to change workspace.</summary>
+      <description>Mouse scroll to change workspace.</description>
+    </key>
+    <key type="b" name="mouse-scroll-workspace-search">
+      <default>true</default>
+      <summary>Mouse scroll to find app's windows on other workspaces when thumbnails are shown.</summary>
+      <description>Mouse scroll to find app's windows on other workspaces when thumbnails are shown.</description>
+    </key>
+    <key type="b" name="icons-attention-blink">
+      <default>true</default>
+      <summary>Whether to blink on window attention.</summary>
+      <description>If true the app icon will blink if its window demands attention.</description>
+    </key>
+    <key type="s" name="icons-attention-blink-rate">
+      <default>'60'</default>
+      <summary>Blinking rate.</summary>
+      <description>Blinking rate (times per minute).</description>
+    </key>
+    <key type="b" name="app-quicklists">
+      <default>true</default>
+      <summary>Whether to use quicklists in menus.</summary>
+      <description>If true and Quicklists extension is enabled then use quicklists in menus.</description>
+    </key>
+    <key type="b" name="icons-favorites">
+      <default>true</default>
+      <summary>Whether to always show icons of favorite apps.</summary>
+      <description>If true icons of favorite apps are always shown.</description>
+    </key>
+    <key type="b" name="icons-favorites-smaller">
+      <default>true</default>
+      <summary>Whether to make icons of not running favorite apps smaller.</summary>
+      <description>If true icons of not running favorite apps are smaller.</description>
+    </key>
+    <key type="s" name="icons-favorites-size">
+      <default>'2'</default>
+      <summary>The size of icons of not running favorite apps.</summary>
+      <description>The size of icons of not running favorite apps.</description>
+    </key>
+    <key type="s" name="icons-windows-indicator">
+      <default>'1'</default>
+      <summary>The type of app icon windows indicator.</summary>
+      <description>The type of app icon windows indicator.</description>
+    </key>
+    <key type="s" name="icons-windows-indicator-color">
+      <default>'#ffffff'</default>
+      <summary>The color used for app icon windows indicator.</summary>
+      <description>The color used for app icon windows indicator.</description>
+    </key>
+    <key type="b" name="windows-preview">
+      <default>false</default>
+      <summary>Whether to preview a window when its thumbnail is hovered.</summary>
+      <description>If true the window is shown on top when its thumbnail is hovered.</description>
+    </key>
+    <key type="s" name="windows-preview-dim-color">
+      <default>'#01234c'</default>
+      <summary>Dim the screen when a preview of a window is shown: color.</summary>
+      <description>Dim the screen when a preview of a window is shown: color.</description>
+    </key>
+    <key type="s" name="windows-preview-dim-opacity">
+      <default>'25'</default>
+      <summary>Dim the screen when a preview of a window is shown: opacity.</summary>
+      <description>Dim the screen when a preview of a window is shown: opacity.</description>
+    </key>
+    <key type="s" name="windows-preview-panel-opacity">
+      <default>'25'</default>
+      <summary>Makes thumbnail panel transparent when previews are on.</summary>
+      <description>Makes thumbnail panel transparent when previews are on.</description>
+    </key>
+  </schema>
+</schemalist>

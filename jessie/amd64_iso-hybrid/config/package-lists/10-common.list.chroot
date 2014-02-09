@@ -1,0 +1,36 @@
+### packages for the live distro
+user-setup
+eject
+### Live common packages
+build-essential
+chromium
+chromium-l10n
+dict-freedict-eng-ita
+dict-freedict-ita-eng
+dosfstools
+firmware-b43-installer
+firmware-linux
+firmware-realtek
+flashplugin-nonfree
+goldendict
+gparted
+gstreamer0.10-plugins-really-bad
+k3b
+k3b-i18n
+kpartx
+libgtk2-perl
+linux-wlan-ng-firmware
+lm-sensors
+mc
+memtest86+
+ntfs-3g
+p7zip-full
+rar
+samba
+stardict
+unison-gtk
+unrar
+unzip
+vlc
+wine
+zip

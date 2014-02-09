@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+	--distribution jessie \
+	--archive-areas "main contrib non-free" \
+	--architecture amd64 \
+	--linux-flavours amd64 \
+	--binary-images iso-hybrid \
+	--iso-application "Livedevelop" \
+	--iso-preparer "mortaromarcello" \
+	--iso-publisher "Livedevelop Live project; mortaromarcello@gmail.com" \
+	--iso-volume "Livedevelop" \
+	--bootappend-live "boot=live components locales=it_IT.UTF-8 keyboard-layouts=it quiet splash persistence" \
+	"${@}"

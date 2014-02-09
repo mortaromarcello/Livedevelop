@@ -1,0 +1,167 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gnomenu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: extension.js
+
+msgid "View"
+msgstr ""
+
+msgid "Apps"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Type to search..."
+msgstr ""
+
+msgid "All Applications"
+msgstr ""
+
+#msgid "All Places"
+#msgstr ""
+
+msgid "Places"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Devices"
+msgstr ""
+
+msgid "Recent"
+msgstr ""
+
+msgid "Web"
+msgstr ""
+
+msgid "Gno-Menu: Search Firefox bookmarks disabled"
+msgstr ""
+
+msgid "If you want to search Firefox bookmarks, you must install the required pacakages: libgir1.2-gda-5.0 (Ubuntu) or libgda-sqlite (Fedora)"
+msgstr ""
+
+msgid "Gno-Menu: Search Midori bookmarks disabled"
+msgstr ""
+
+msgid "If you want to search Midori bookmarks, you must install the required pacakages: libgir1.2-gda-5.0 (Ubuntu) or libgda-sqlite (Fedora)"
+msgstr ""
+
+msgid "Logout User"
+msgstr ""
+
+msgid "Lock Screen"
+msgstr ""
+
+msgid "Advanced Settings"
+msgstr ""
+
+msgid "System Settings"
+msgstr ""
+
+msgid "List View"
+msgstr ""
+
+msgid "Grid View"
+msgstr ""
+
+msgid "Restart Shell"
+msgstr ""
+
+msgid "Suspend"
+msgstr ""
+
+msgid "Shutdown"
+msgstr ""
+
+msgid "Preferences"
+msgstr ""
+
+msgid "No GnoMenu stylesheet found"
+msgstr ""
+
+
+#: placeDisplay.js
+
+msgid "Failed to launch \"%s\""
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Browse Network"
+msgstr ""
+
+
+#: prefs.js
+
+msgid "<b>Panel Settings</b>"
+msgstr ""
+
+msgid "Disable activities hot corner"
+msgstr ""
+
+msgid "Remove View button from panel"
+msgstr ""
+
+msgid "Use custom label for View button"
+msgstr ""
+
+msgid "Remove Apps button from panel"
+msgstr ""
+
+msgid "Use custom label for Apps button"
+msgstr ""
+
+msgid "Remove Menu button from panel"
+msgstr ""
+
+msgid "Disable Menu button hot spot"
+msgstr ""
+
+msgid "Disable Menu button keyboard shortcut"
+msgstr ""
+
+msgid "Use custom label for Menu button"
+msgstr ""
+
+msgid "<b>Menu Settings</b>"
+msgstr ""
+
+msgid "Menu layout style"
+msgstr ""
+
+msgid "Startup applications to display"
+msgstr ""
+
+msgid "Default view mode for applications"
+msgstr ""
+
+msgid "Category selection method"
+msgstr ""
+
+msgid "Size of Favorites Panel icons"
+msgstr ""
+
+msgid "Size of Application List icons"
+msgstr ""
+
+msgid "Size of Application Grid icons"
+msgstr ""
+
+msgid "Hide favorites section of menu"
+msgstr ""

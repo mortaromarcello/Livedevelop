@@ -1,0 +1,10 @@
+#!/bin/bash
+TMP="/tmp/glade-3"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+
+wget http://ftp.gnome.org/pub/GNOME/sources/glade/3.8/glade3-3.8.4.tar.xz
+tar xvf glade3-3.8.4.tar.xz
+cd glade3-3.8.4
+./configure && make && make install
+
+rm -R -f -v ${TMP}
