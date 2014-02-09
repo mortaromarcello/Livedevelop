@@ -19,8 +19,6 @@ k3b
 k3b-i18n
 kpartx
 libgtk2-perl
-libwine-print
-libwine-gl
 linux-wlan-ng-firmware
 lm-sensors
 mc
@@ -34,6 +32,5 @@ unison-gtk
 unrar
 unzip
 vlc
-winbind
 wine
 zip

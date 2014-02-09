@@ -91,6 +91,7 @@ python-rope
 qgit
 qtcreator
 ruby
+ruby-dev
 #if DISTRIBUTION wheezy
 ruby-gnome2
 #endif

@@ -3,9 +3,10 @@ TMP="/tmp/torbrowser"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 
 LANG=it
-VERSION=3.5
-wget https://www.torproject.org/dist/torbrowser/${VERSION}/tor-browser-linux32-3.5_${LANG}.tar.xz
-tar -C /opt -xvJf tor-browser-linux32-3.5_${LANG}.tar.xz
+VERSION=3.5.1
+ARCH=32
+wget https://www.torproject.org/dist/torbrowser/${VERSION}/tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
+tar -C /opt -xvJf tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
 cat > /usr/share/applications/torbrowser.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
