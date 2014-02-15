@@ -87,6 +87,7 @@ python-all-dev
 python-cairo-dev
 python-gtk2-dev
 python-markdown
+python-parted
 python-pip
 python-rope
 python-virtualenv
@@ -104,7 +105,6 @@ sqlite3
 swig
 valac
 virtaal
-virtualenvwrapper
 wx3.0-doc
 wx3.0-examples
 wx3.0-headers
