@@ -87,6 +87,7 @@ python-all-dev
 python-cairo-dev
 python-gtk2-dev
 python-markdown
+python-parted
 python-pip
 python-rope
 python-virtualenv
