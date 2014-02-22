@@ -34,6 +34,7 @@ libsdl1.2-dev
 libsmf-dev
 libsublime-dev
 libusb-dev
+libusb-1.0-0-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev

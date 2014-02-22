@@ -18,7 +18,7 @@ cd ${TMP}
 
 dpkg -i live-build_*.deb
 dpkg -i live-boot{_,-initramfs-tools,-doc}*.deb
-dpkg -i live-config{_,-systemd,-sysvinit,-doc}*.deb
+dpkg -i live-config{_,-sysvinit,-doc}*.deb
 dpkg -i live-manual-html*.deb
 
 rm -vf ${DIR}/config/packages.chroot/live-build_*.deb
@@ -27,7 +27,7 @@ rm -vf ${DIR}/config/packages.chroot/live-{boot,config,tools,manual}*.deb
 cp -v live-build_*.deb ${DIR}/config/packages.chroot/
 cp -v live-tools_*.deb ${DIR}/config/packages.chroot/
 cp -v live-boot{_,-initramfs-tools,-doc}*.deb ${DIR}/config/packages.chroot/
-cp -v live-config{_,-systemd,-sysvinit,-doc}*.deb  ${DIR}/config/packages.chroot/
+cp -v live-config{_,-sysvinit,-doc}*.deb  ${DIR}/config/packages.chroot/
 cp -v live-manual-html*.deb ${DIR}/config/packages.chroot/
 
 rm -R -f -v ${TMP}

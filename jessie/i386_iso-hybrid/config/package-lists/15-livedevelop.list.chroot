@@ -43,22 +43,15 @@ gddrescue
 gdisk
 gpart
 gnome-search-tool
-gnome-system-tools
 gptsync
 grdesktop
 grub-pc
 gzrt
-#if DISTRIBUTION wheezy
-hardinfo
-#endif
 hddtemp
 hfsprogs
 hfsutils
 hping3
 hunt
-#if DISTRIBUTION wheezy
-hwinfo
-#endif
 ipxe
 jfsutils
 john
@@ -86,9 +79,6 @@ mkswap-uuid
 myrescue
 mysql-server
 mysql-client
-#if DISTRIBUTION wheezy
-ncpfs
-#endif
 netsed
 nautilus-open-terminal
 nfs-kernel-server
@@ -139,6 +129,7 @@ sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
 syslinux
+system-tools-backends
 tcpdump
 tcptrace
 tcpstat
@@ -151,9 +142,7 @@ uml-utilities
 urfkill
 v86d
 virtualbox
-virtualbox-guest-dkms
 virtualbox-guest-utils
-virtualbox-guest-x11
 vlan
 vmfs-tools
 w3af

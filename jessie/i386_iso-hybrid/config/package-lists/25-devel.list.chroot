@@ -1,7 +1,4 @@
 adminer
-#if DISTRIBUTION wheezy
-bashdb
-#endif
 bison
 bless
 bluefish
@@ -11,13 +8,9 @@ codeblocks
 codeblocks-contrib
 codelite
 cmake
-#if DISTRIBUTION wheezy
-cssed
-#endif
 curl
 ddd
 empty-expect
-eric
 expect
 flex
 geany
@@ -53,6 +46,7 @@ libsdl1.2-dev
 libsmf-dev
 libsublime-dev
 libusb-dev
+libusb-1.0-0-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev
@@ -95,9 +89,6 @@ qgit
 qtcreator
 ruby
 ruby-dev
-#if DISTRIBUTION wheezy
-ruby-gnome2
-#endif
 spe
 spyder
 sqlite
