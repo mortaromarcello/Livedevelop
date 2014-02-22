@@ -4,7 +4,7 @@ TMP="/tmp/torbrowser"
 
 LANG=it
 VERSION=3.5.2.1
-ARCH=32
+ARCH=64
 wget https://www.torproject.org/dist/torbrowser/${VERSION}/tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
 tar -C /opt -xvJf tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
 cat > /usr/share/applications/torbrowser.desktop <<EOF
