@@ -1,15 +1,9 @@
-adminer
 bison
-bless
-bluefish
 bzr
 codeblocks
 codeblocks-contrib
 codelite
 cmake
-curl
-ddd
-empty-expect
 expect
 flex
 geany
@@ -56,10 +50,8 @@ kdevelop-php
 kdevelop-php-docs
 kdevelop-php-docs-l10n
 kdevelop-php-l10n
-maven
 meld
 nasm
-openjdk-7-jdk
 netexpect
 patchutils
 poedit
@@ -73,7 +65,6 @@ python-pip
 python-rope
 python-virtualenv
 python-wxgtk2.8
-qtcreator
 ruby
 ruby-dev
 sqlite
