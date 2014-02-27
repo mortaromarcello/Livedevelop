@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/android"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-
+rm -R -f -v *
 TARGET="linux-x86"
 VERSIONE_SDK="20131030"
 VERSIONE_NDK="r9c"
