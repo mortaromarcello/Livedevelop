@@ -17,13 +17,14 @@ cd ./Faenza/apps/scalable/ && ln -sf ./softwarecenter-debian.svg softwarecenter.
 for size in 48 32 24 22 16; do
   cd ./Faenza/apps/$size/ && ln -sf ./softwarecenter-debian.png softwarecenter.png && cd ../../..
 done
-cp -R ./Faenza/ /usr/share/icons/
-cp -R ./Faenza-Dark/ /usr/share/icons/
-cp -R ./Faenza-Darkest/ /usr/share/icons/
-cp -R ./Faenza-Darker/ /usr/share/icons/
-cp -R ./Faenza-Ambiance/ /usr/share/icons/
-cp -R ./Faenza-Radiance/ /usr/share/icons/
+cp -R -v ./Faenza/ /usr/share/icons/
+cp -R -v ./Faenza-Dark/ /usr/share/icons/
+cp -R -v ./Faenza-Darkest/ /usr/share/icons/
+cp -R -v ./Faenza-Darker/ /usr/share/icons/
+cp -R -v ./Faenza-Ambiance/ /usr/share/icons/
+cp -R -v ./Faenza-Radiance/ /usr/share/icons/
 if [ -e /usr/bin/emesene ]; then
-  cp -R ./emesene /usr/share
-
+  cp -R -v ./emesene /usr/share
+fi
 rm -R -f -v ${TMP}
+
