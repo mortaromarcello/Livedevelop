@@ -65,6 +65,7 @@ python-pip
 python-rope
 python-virtualenv
 python-wxgtk2.8
+qtcreator
 ruby
 ruby-dev
 sqlite
