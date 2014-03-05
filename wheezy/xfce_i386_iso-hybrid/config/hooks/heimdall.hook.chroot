@@ -1,0 +1,22 @@
+#!/bin/bash
+TMP="/tmp/heimdall"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
+git clone https://github.com/mortaromarcello/Heimdall.git
+cd ${TMP}/Heimdall/libpit && ./configure && make
+cd ${TMP}/Heimdall/heimdall && ./configure && make && make install
+cd ${TMP}/Heimdall/heimdall-frontend && qmake heimdall-frontend.pro && make && make install
+mkdir -p /usr/share/icons/heimdall-frontend
+cp -v ${TMP}/Heimdall/heimdall-frontend.png /usr/share/icons/heimdall-frontend/
+cp -v ${TMP}/Heimdall/heimdall/60-heimdall.rules /etc/udev/rules.d/
+cat > /usr/share/applications/heimdall-frontend.desktop <<EOF
+[Desktop Entry]
+Name=Heimdall Frontend
+Type=Application
+Icon=/usr/share/icons/heimdall-frontend/heimdall-frontend.png
+Exec=/usr/local/bin/heimdall-frontend
+Categories=GNOME;Utility;
+Terminal=false
+EOF
+
+rm -R -f -v ${TMP}

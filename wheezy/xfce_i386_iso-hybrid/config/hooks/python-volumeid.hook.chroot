@@ -1,0 +1,9 @@
+#!/bin/bash
+TMP="/tmp/python-volumeid"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
+svn checkout http://svn.projects.otaku42.de/python-volumeid/ python-volumeid
+cd python-volumeid/trunk && dpkg-buildpackage -b -uc -us && cd ../
+dpkg -i python-blkid*.deb
+
+rm -R -f -v ${TMP}
