@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/scripts"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-
+rm -R -f -v *
 git clone https://github.com/mortaromarcello/scripts
 cd scripts
 cp -v ./yad_install_distro.sh /usr/local/bin/yad_install_distro.sh

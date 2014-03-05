@@ -1,9 +1,12 @@
 #!/bin/bash
+TMP="/tmp/torbrowser"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
 LANG=it
-VERSION=3.5
-[[ ! -d /tmp/torbrowser ]] && mkdir -p /tmp/torbrowser; cd /tmp/torbrowser
-wget https://www.torproject.org/dist/torbrowser/${VERSION}/tor-browser-linux32-3.5_${LANG}.tar.xz
-tar -C /opt -xvJf tor-browser-linux32-3.5_${LANG}.tar.xz
+VERSION=3.5.2.1
+ARCH=32
+wget https://www.torproject.org/dist/torbrowser/${VERSION}/tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
+tar -C /opt -xvJf tor-browser-linux${ARCH}-${VERSION}_${LANG}.tar.xz
 cat > /usr/share/applications/torbrowser.desktop <<EOF
 [Desktop Entry]
 Encoding=UTF-8
@@ -114,4 +117,4 @@ EOF
 mkdir -p /opt/tor-browser_${LANG}/Browser/browser/plugins
 ln -s /etc/alternatives/flash-mozilla.so /opt/tor-browser_${LANG}/Browser/browser/plugins/flash-mozilla.so
 
-rm -R -f -v /tmp/torbrowser
+rm -R -f -v ${TMP}

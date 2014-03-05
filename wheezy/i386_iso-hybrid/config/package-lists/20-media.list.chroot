@@ -1,17 +1,13 @@
 audacious
 audacity
 avidemux
+gnome-subtitles
 kaffeine
 isomaster
-#if DISTRIBUTION wheezy
-furiusisomount
-#endif
 libdvdcss2
 me-tv
 minidlna
-#if DISTRIBUTION wheezy
-miro
-#endif
+mkvtoolnix-gui
 ogmrip
 openshot
 smplayer2

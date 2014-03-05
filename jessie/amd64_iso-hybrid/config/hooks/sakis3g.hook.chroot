@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/sakis3g"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-
+rm -R -f -v *
 git clone http://github.com/mortaromarcello/sakis3g-source
 cd sakis3g-source
 mkdir build

@@ -14,6 +14,7 @@ localepurge	localepurge/verbose	boolean	false
 localepurge	localepurge/nopurge	multiselect	it en
 localepurge	localepurge/quickndirtycalc	boolean	true
 localepurge	localepurge/mandelete	boolean	true
+localepurge localepurge/use-dpkg-feature boolean false
 EOF
 debconf-set-selections < /tmp/localepurge.preseed
 rm -f /tmp/localepurge.preseed

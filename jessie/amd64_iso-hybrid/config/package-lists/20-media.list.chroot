@@ -4,16 +4,10 @@ avidemux
 gnome-subtitles
 kaffeine
 isomaster
-#if DISTRIBUTION wheezy
-furiusisomount
-#endif
 libdvdcss2
 me-tv
 minidlna
 mkvtoolnix-gui
-#if DISTRIBUTION wheezy
-miro
-#endif
 ogmrip
 openshot
 smplayer2

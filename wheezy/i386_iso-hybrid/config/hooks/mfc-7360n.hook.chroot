@@ -1,13 +1,16 @@
 #!/bin/bash
-
-MODEL=$(uname -m)
-[[ ! -d /tmp/mfc-7360n ]] && mkdir -p /tmp/mfc-7360n; cd /tmp/mfc-7360n
+TMP="/tmp/mfc-7360n"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
 wget http://www.brother.com/pub/bsc/linux/dlf/mfc7360nlpr-2.1.0-1.i386.deb
 wget http://www.brother.com/pub/bsc/linux/dlf/cupswrapperMFC7360N-2.0.4-2.i386.deb
+wget http://www.brother.com/pub/bsc/linux/dlf/brother-udev-rule-type1-1.0.0-1.all.deb
 #per i386:
-wget http://www.brother.com/pub/bsc/linux/dlf/brscan4-0.4.1-6.i386.deb
-dpkg -i --force-all brscan4-0.4.1-6.i386.deb
+wget http://www.brother.com/pub/bsc/linux/dlf/brscan4-0.4.2-1.i386.deb
+dpkg -i --force-all brscan4-0.4.2-1.i386.deb
 # installa con dpkg (i primi due file sono solo i386, vengono installati ugualmente):
 dpkg -i --force-all mfc7360nlpr-2.1.0-1.i386.deb
 dpkg -i --force-all cupswrapperMFC7360N-2.0.4-2.i386.deb
-rm -R -f -v /tmp/mfc-7360n
+dpkg -i --force-all brother-udev-rule-type1-1.0.0-1.all.deb
+
+rm -R -f -v ${TMP}
