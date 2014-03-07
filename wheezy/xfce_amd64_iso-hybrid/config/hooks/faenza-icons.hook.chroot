@@ -1,0 +1,30 @@
+#!/bin/bash
+TMP="/tmp/faenza-icons"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
+VER=1.3
+wget http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_${VER}.zip
+
+unzip faenza-icon-theme_${VER}.zip
+tar xvf Faenza.tar.gz
+tar xvf Faenza-Dark.tar.gz
+tar xvf Faenza-Darkest.tar.gz
+tar xvf Faenza-Darker.tar.gz
+tar xvf Faenza-Ambiance.tar.gz
+tar xvf Faenza-Radiance.tar.gz
+tar xvf emesene-faenza-theme.tar.gz
+cd ./Faenza/apps/scalable/ && ln -sf ./softwarecenter-debian.svg softwarecenter.svg && cd ../../..
+for size in 48 32 24 22 16; do
+  cd ./Faenza/apps/$size/ && ln -sf ./softwarecenter-debian.png softwarecenter.png && cd ../../..
+done
+cp -R -v ./Faenza/ /usr/share/icons/
+cp -R -v ./Faenza-Dark/ /usr/share/icons/
+cp -R -v ./Faenza-Darkest/ /usr/share/icons/
+cp -R -v ./Faenza-Darker/ /usr/share/icons/
+cp -R -v ./Faenza-Ambiance/ /usr/share/icons/
+cp -R -v ./Faenza-Radiance/ /usr/share/icons/
+if [ -e /usr/bin/emesene ]; then
+  cp -R -v ./emesene /usr/share
+fi
+rm -R -f -v ${TMP}
+

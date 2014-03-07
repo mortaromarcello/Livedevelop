@@ -1,0 +1,8 @@
+### base system
+! Packages Priority standard
+task-xfce-desktop
+task-italian
+task-italian-desktop
+task-italian-kde-desktop
+task-laptop
+task-print-server
