@@ -1,0 +1,11 @@
+#!/bin/bash
+TMP="/tmp/warzone"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
+VER="3.1.1"
+wget http://downloads.sourceforge.net/project/warzone2100/releases/${VER}/warzone2100-${VER}.tar.xz
+tar xfv warzone2100-${VER}.tar.xz
+cd warzone2100-${VER}
+./configure && make && make install
+
+rm -R -f -v ${TMP}

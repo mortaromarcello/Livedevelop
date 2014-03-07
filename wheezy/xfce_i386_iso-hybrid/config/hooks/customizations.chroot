@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# customize root's profile
+cd /etc/skel
+cp .bash_logout .bashrc .profile /root/
+
+# set custom wallpaper
+update-alternatives --install /usr/share/images/desktop-base/desktop-background.xml desktop-background.xml /usr/share/backgrounds/debian-blue.xml 100
+
+echo "done."
