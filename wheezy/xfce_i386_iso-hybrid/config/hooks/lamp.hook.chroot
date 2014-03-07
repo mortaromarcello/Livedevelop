@@ -1,4 +1,0 @@
-#!/bin/bash
-
-a2enmod userdir
-a2enmod rewrite
