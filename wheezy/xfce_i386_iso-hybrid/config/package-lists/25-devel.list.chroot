@@ -1,4 +1,5 @@
 asciidoc
+bashdb
 bison
 bzr
 codeblocks
@@ -56,6 +57,11 @@ kdevelop-php-docs
 kdevelop-php-docs-l10n
 kdevelop-php-l10n
 meld
+mingw32
+monodevelop
+monodevelop-database
+monodevelop-nunit
+monodevelop-versioncontrol
 nasm
 netexpect
 patchutils

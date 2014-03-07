@@ -1,7 +1,5 @@
 adminer
-#if DISTRIBUTION wheezy
 bashdb
-#endif
 bison
 bless
 bluefish
@@ -10,9 +8,7 @@ codeblocks
 codeblocks-contrib
 codelite
 cmake
-#if DISTRIBUTION wheezy
 cssed
-#endif
 curl
 ddd
 empty-expect
@@ -89,9 +85,7 @@ python-rope
 qgit
 qtcreator
 ruby
-#if DISTRIBUTION wheezy
 ruby-gnome2
-#endif
 spe
 spyder
 swig
