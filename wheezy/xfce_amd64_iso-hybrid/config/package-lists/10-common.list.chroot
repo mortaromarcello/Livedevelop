@@ -1,4 +1,5 @@
 ### packages for the live distro
+live-tools
 user-setup
 eject
 ### Live common packages
@@ -26,6 +27,8 @@ mc
 memtest86+
 ntfs-3g
 p7zip-full
+qemu
+qemu-kvm
 rar
 samba
 stardict

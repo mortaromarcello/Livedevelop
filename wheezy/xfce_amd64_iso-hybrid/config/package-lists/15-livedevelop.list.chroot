@@ -4,9 +4,11 @@ bleachbit
 blueman
 calibre
 evince-gtk
+extlinux
 filezilla
 fslint
 gksu
+grub-pc
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
@@ -22,5 +24,6 @@ proftpd-basic
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
+syslinux
 virtualbox
 xiphos
