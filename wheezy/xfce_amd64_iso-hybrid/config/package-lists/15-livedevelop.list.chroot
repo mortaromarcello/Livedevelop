@@ -9,6 +9,7 @@ filezilla
 fslint
 gksu
 grub-pc
+ia32-libs
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1

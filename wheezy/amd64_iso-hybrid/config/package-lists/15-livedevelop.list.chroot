@@ -47,22 +47,15 @@ gnome-system-tools
 gptsync
 grdesktop
 grub-pc
+ia32-libs
 gzrt
-#if DISTRIBUTION wheezy
 hardinfo
-#endif
 hddtemp
-#if DISTRIBUTION testing
-heimdall-flash
-heimdall-flash-frontend
-#endif
 hfsprogs
 hfsutils
 hping3
 hunt
-#if DISTRIBUTION wheezy
 hwinfo
-#endif
 ipxe
 jfsutils
 john
