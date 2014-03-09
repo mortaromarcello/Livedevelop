@@ -1,8 +1,8 @@
 adminer
+asciidoc
 bison
 bless
 bluefish
-boa-constructor
 bzr
 codeblocks
 codeblocks-contrib
@@ -10,6 +10,9 @@ codelite
 cmake
 curl
 ddd
+docbook
+docbook-xml
+docbook-xsl
 empty-expect
 expect
 flex
@@ -27,6 +30,7 @@ gtranslator
 intltool
 lazarus
 leksah
+libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev
@@ -85,6 +89,7 @@ python-parted
 python-pip
 python-rope
 python-virtualenv
+python-wxgtk2.8
 qgit
 qtcreator
 ruby

@@ -4,6 +4,7 @@ set -e
 
 lb config noauto \
 	--distribution wheezy \
+	--apt aptitude \
 	--archive-areas "main contrib non-free" \
 	--architecture i386 \
 	--linux-flavours 686-pae \

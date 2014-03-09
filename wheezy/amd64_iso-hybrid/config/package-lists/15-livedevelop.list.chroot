@@ -104,6 +104,7 @@ php5-curl
 php5-gd
 php5-mcrypt
 php5-mysql
+php5-tidy
 pigz
 plzip
 proftpd-basic
