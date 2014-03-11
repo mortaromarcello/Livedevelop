@@ -6,9 +6,12 @@ codeblocks
 codeblocks-contrib
 codelite
 cmake
+curl
+ddd
 docbook
 docbook-xml
 docbook-xsl
+empty-expect
 expect
 flex
 geany

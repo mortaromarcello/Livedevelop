@@ -1,9 +1,16 @@
+asciidoc
 bison
 bzr
 codeblocks
 codeblocks-contrib
 codelite
 cmake
+curl
+ddd
+docbook
+docbook-xml
+docbook-xsl
+empty-expect
 expect
 flex
 geany
@@ -15,6 +22,7 @@ gnu-efi
 gphpedit
 gtranslator
 intltool
+libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev
@@ -51,6 +59,11 @@ kdevelop-php-docs
 kdevelop-php-docs-l10n
 kdevelop-php-l10n
 meld
+mingw32
+monodevelop
+monodevelop-database
+monodevelop-nunit
+monodevelop-versioncontrol
 nasm
 netexpect
 patchutils
