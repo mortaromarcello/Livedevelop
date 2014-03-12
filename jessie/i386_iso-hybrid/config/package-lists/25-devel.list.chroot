@@ -1,5 +1,4 @@
 adminer
-asciidoc
 bison
 bless
 bluefish
@@ -10,9 +9,6 @@ codelite
 cmake
 curl
 ddd
-docbook
-docbook-xml
-docbook-xsl
 empty-expect
 expect
 flex
@@ -30,7 +26,6 @@ gtranslator
 intltool
 lazarus
 leksah
-libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev

@@ -1,10 +1,9 @@
 adminer
-asciidoc
 bashdb
 bison
-bzr
 bless
 bluefish
+bzr
 codeblocks
 codeblocks-contrib
 codelite
@@ -12,9 +11,6 @@ cmake
 cssed
 curl
 ddd
-docbook
-docbook-xml
-docbook-xsl
 empty-expect
 eric
 expect
@@ -33,7 +29,6 @@ gtranslator
 intltool
 lazarus
 leksah
-libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev

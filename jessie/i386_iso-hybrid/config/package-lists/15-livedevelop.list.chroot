@@ -46,7 +46,6 @@ gnome-search-tool
 gptsync
 grdesktop
 grub-pc
-ia32-libs
 gzrt
 hddtemp
 hfsprogs
@@ -148,6 +147,7 @@ vlan
 vmfs-tools
 w3af
 wakeonlan
+warzone2100
 wipe
 wireshark
 xprobe
