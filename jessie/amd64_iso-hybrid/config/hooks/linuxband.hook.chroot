@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/linuxband"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v ${TMP}/*
 git clone -b master http://github.com/mortaromarcello/linuxband
 cd linuxband
 ./autogen.sh

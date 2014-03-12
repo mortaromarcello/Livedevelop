@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/faenza-icons"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v ${TMP}/*
 VER=1.3
 wget http://faenza-icon-theme.googlecode.com/files/faenza-icon-theme_${VER}.zip
 
