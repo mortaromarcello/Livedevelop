@@ -1,10 +1,10 @@
 #!/bin/bash
 TMP="/tmp/android"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v ${TMP}/*
 TARGET="linux-x86_64"
 VERSIONE_SDK="20131030"
-VERSIONE_NDK="r9c"
+VERSIONE_NDK="r9d"
 ANDROID_NDK=/opt/android-ndk-${VERSIONE_NDK}
 ANDROID_HOME=/opt/adt-bundle-${TARGET}-${VERSIONE_SDK}/sdk
 ANDROID_SDK=${ANDROID_HOME}
