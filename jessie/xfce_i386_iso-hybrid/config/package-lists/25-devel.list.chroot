@@ -1,4 +1,3 @@
-asciidoc
 bison
 bzr
 codeblocks
@@ -7,9 +6,6 @@ codelite
 cmake
 curl
 ddd
-docbook
-docbook-xml
-docbook-xsl
 empty-expect
 expect
 flex
@@ -22,7 +18,6 @@ gnu-efi
 gphpedit
 gtranslator
 intltool
-libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev

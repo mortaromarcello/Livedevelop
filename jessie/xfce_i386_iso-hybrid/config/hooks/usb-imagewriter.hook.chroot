@@ -1,7 +1,7 @@
 #!/bin/bash
 TMP="/tmp/imagewriter"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v ${TMP}/*
 bzr branch lp:usb-imagewriter
 cd usb-imagewriter
 ./install.sh

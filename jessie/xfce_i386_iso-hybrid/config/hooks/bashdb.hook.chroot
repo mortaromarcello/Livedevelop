@@ -1,11 +1,12 @@
 #!/bin/bash
 TMP="/tmp/bashdb"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v {TMP}/*
 VERSION=4.2-0.8
-wget http://downloads.sourceforge.net/project/bashdb/bashdb/${VERSION}/bashdb-${VERSION}.tar.bz2
-tar xfv bashdb-${VERSION}.tar.bz2
-cd bashdb-${VERSION}
-./configure && make && make check && make install
-
+if [ "$(bash --version|grep 4.2)" ]; then
+  wget http://downloads.sourceforge.net/project/bashdb/bashdb/${VERSION}/bashdb-${VERSION}.tar.bz2
+  tar xfv bashdb-${VERSION}.tar.bz2
+  cd bashdb-${VERSION}
+  ./configure && make && make check && make install
+fi
 rm -R -f -v ${TMP}
