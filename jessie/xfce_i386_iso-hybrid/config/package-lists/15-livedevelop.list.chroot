@@ -3,6 +3,7 @@ apache2
 bleachbit
 blueman
 calibre
+cutecom
 evince-gtk
 filezilla
 fslint
@@ -11,6 +12,8 @@ grub-pc
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
+microcom
+minicom
 pdfchain
 pdfsam
 php5

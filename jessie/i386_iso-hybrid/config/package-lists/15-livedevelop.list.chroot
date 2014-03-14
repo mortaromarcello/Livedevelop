@@ -17,6 +17,8 @@ cifs-utils
 clonezilla
 conky
 cryptmount
+calibre
+cutecom
 dar
 deborphan
 di
@@ -75,6 +77,8 @@ makebootfat
 mawk
 mbr
 mdadm
+microcom
+minicom
 mkswap-uuid
 myrescue
 mysql-server
