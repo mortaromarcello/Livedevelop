@@ -52,6 +52,7 @@ hfsprogs
 hfsutils
 hping3
 hunt
+ia32-libs
 ipxe
 jfsutils
 john
