@@ -52,7 +52,6 @@ hfsprogs
 hfsutils
 hping3
 hunt
-ia32-libs
 ipxe
 jfsutils
 john
@@ -61,6 +60,9 @@ ldap-utils
 lftp
 libapache2-mod-php5
 libavahi-compat-libdnssd1
+libc6:i386
+libncurses5:i386
+libstdc++6:i386
 live-boot
 live-config
 lrzip
