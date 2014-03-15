@@ -17,6 +17,8 @@ cifs-utils
 clonezilla
 conky
 cryptmount
+calibre
+cutecom
 dar
 deborphan
 di
@@ -41,6 +43,7 @@ fsarchiver
 fslint
 gddrescue
 gdisk
+gir1.2-gda-5.0
 gpart
 gnome-search-tool
 gptsync
@@ -78,6 +81,8 @@ makebootfat
 mawk
 mbr
 mdadm
+microcom
+minicom
 mkswap-uuid
 myrescue
 mysql-server
