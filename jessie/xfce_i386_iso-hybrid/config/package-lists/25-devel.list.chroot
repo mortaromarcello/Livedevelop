@@ -77,6 +77,7 @@ python-wxgtk2.8
 qtcreator
 ruby
 ruby-dev
+spyder
 sqlite
 sqlite3
 wx3.0-doc
