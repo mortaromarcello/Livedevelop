@@ -16,7 +16,8 @@ find /opt/android-studio/plugins -type f -exec chmod 0664 {} \;
 chmod 0664 /opt/android-studio/{build.txt,bin/studio.vmoptions,bin/studio64.vmoptions}
 chmod 0775 /opt/android-studio/bin/{studio.sh,fsnotifier,fsnotifier64,inspect.sh,update_studio.sh}
 cat >/etc/skel/.environment<<EOF
-PATH=/opt/android-studio/bin/:\$PATH
+export ANDROID_SDK=/opt/android-studio/sdk
+PATH=/opt/android-studio/bin/:\$ANDROID_SDK/platform-tools:\$PATH
 EOF
 cat >/usr/share/applications/android-studio.desktop<<EOF
 [Desktop Entry]
