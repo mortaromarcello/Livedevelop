@@ -6,6 +6,7 @@ calibre
 clamtk
 cutecom
 evince-gtk
+extlinux
 filezilla
 fslint
 gksu
@@ -28,6 +29,7 @@ putty
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
+syslinux
 vinagre
 virtualbox
 warzone2100
