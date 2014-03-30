@@ -14,9 +14,12 @@ calibre
 checkinstall
 chntpw
 cifs-utils
+clamtk
 clonezilla
 conky
 cryptmount
+calibre
+cutecom
 dar
 deborphan
 di
@@ -41,6 +44,7 @@ fsarchiver
 fslint
 gddrescue
 gdisk
+gir1.2-gda-5.0
 gpart
 gnome-search-tool
 gnome-system-tools
@@ -63,6 +67,9 @@ ldap-utils
 lftp
 libapache2-mod-php5
 libavahi-compat-libdnssd1
+libc6:i386
+libncurses5:i386
+libstdc++6:i386
 live-boot
 live-config
 lrzip
@@ -78,6 +85,8 @@ makebootfat
 mawk
 mbr
 mdadm
+microcom
+minicom
 mkswap-uuid
 myrescue
 mysql-server
@@ -110,6 +119,8 @@ proftpd-basic
 psensor
 putty
 pwgen
+qemu
+qemu-kvm
 qemuctl
 recoverdm
 refit
