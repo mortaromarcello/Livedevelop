@@ -9,6 +9,7 @@ codelite
 cmake
 curl
 ddd
+eclipse
 empty-expect
 expect
 flex
