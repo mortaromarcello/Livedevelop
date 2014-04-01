@@ -14,7 +14,7 @@ firmware-realtek
 flashplugin-nonfree
 goldendict
 gparted
-#gstreamer0.10-plugins-really-bad
+gstreamer0.10-plugins-bad
 k3b
 k3b-i18n
 keepass2
