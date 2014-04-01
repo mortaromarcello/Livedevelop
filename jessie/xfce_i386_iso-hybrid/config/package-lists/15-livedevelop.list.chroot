@@ -10,6 +10,7 @@ extlinux
 filezilla
 fslint
 gksu
+gnome-calculator
 grub-pc
 ktorrent
 libapache2-mod-php5
@@ -26,6 +27,8 @@ php5-mysql
 php5-tidy
 proftpd-basic
 putty
+qemu
+qemu-kvm
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv
