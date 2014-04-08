@@ -5,6 +5,8 @@ blueman
 calibre
 clamtk
 cutecom
+dmraid
+dmsetup
 evince-gtk
 extlinux
 filezilla
@@ -15,6 +17,7 @@ grub-pc
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
+mdadm
 microcom
 minicom
 pdfchain
