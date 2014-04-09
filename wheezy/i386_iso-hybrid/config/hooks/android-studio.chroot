@@ -1,0 +1,32 @@
+#!/bin/bash
+TMP="/tmp/android"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+VERSIONE="133.970939"
+wget http://dl.google.com/android/studio/install/0.4.2/android-studio-bundle-${VERSIONE}-linux.tgz
+if [ ! -d /opt ]; then
+  mkdir -m 0755 -p /opt
+fi
+tar -C /opt -xvf android-studio-bundle-${VERSIONE}-linux.tgz
+addgroup --gid 1100 android
+chown -R :android /opt/android-studio
+find /opt/android-studio -type d -exec chmod 0775 {} \;
+find /opt/android-studio/lib -type f -exec chmod 0664 {} \;
+find /opt/android-studio/plugins -type f -exec chmod 0664 {} \;
+chmod 0664 /opt/android-studio/{build.txt,bin/studio.vmoptions,bin/studio64.vmoptions}
+chmod 0775 /opt/android-studio/bin/{studio.sh,fsnotifier,fsnotifier64,inspect.sh,update_studio.sh}
+cat >/etc/skel/.environment<<EOF
+export ANDROID_SDK=/opt/android-studio/sdk
+PATH=/opt/android-studio/bin/:\$ANDROID_SDK/platform-tools:\$PATH
+EOF
+cat >/usr/share/applications/android-studio.desktop<<EOF
+[Desktop Entry]
+Type=Application
+Name=Android Studio
+Comment=Android Development Environment based on IntelliJ IDEA
+Icon=/opt/android-studio/bin/idea.png
+Exec=/opt/android-studio/bin/studio.sh
+Terminal=false
+Categories=Development;IDE;Java;
+EOF
+rm -R -f -v ${TMP}
