@@ -14,9 +14,12 @@ calibre
 checkinstall
 chntpw
 cifs-utils
+clamtk
 clonezilla
 conky
 cryptmount
+calibre
+cutecom
 dar
 deborphan
 di
@@ -41,6 +44,7 @@ fsarchiver
 fslint
 gddrescue
 gdisk
+gir1.2-gda-5.0
 gpart
 gnome-search-tool
 gnome-system-tools
@@ -48,21 +52,13 @@ gptsync
 grdesktop
 grub-pc
 gzrt
-#if DISTRIBUTION wheezy
 hardinfo
-#endif
 hddtemp
-#if DISTRIBUTION testing
-heimdall-flash
-heimdall-flash-frontend
-#endif
 hfsprogs
 hfsutils
 hping3
 hunt
-#if DISTRIBUTION wheezy
 hwinfo
-#endif
 ipxe
 jfsutils
 john
@@ -71,6 +67,9 @@ ldap-utils
 lftp
 libapache2-mod-php5
 libavahi-compat-libdnssd1
+libc6:i386
+libncurses5:i386
+libstdc++6:i386
 live-boot
 live-config
 lrzip
@@ -86,6 +85,8 @@ makebootfat
 mawk
 mbr
 mdadm
+microcom
+minicom
 mkswap-uuid
 myrescue
 mysql-server
@@ -111,12 +112,15 @@ php5-curl
 php5-gd
 php5-mcrypt
 php5-mysql
+php5-tidy
 pigz
 plzip
 proftpd-basic
 psensor
 putty
 pwgen
+qemu
+qemu-kvm
 qemuctl
 recoverdm
 refit

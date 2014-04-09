@@ -3,7 +3,7 @@ bashdb
 bison
 bless
 bluefish
-boa-constructor
+bzr
 codeblocks
 codeblocks-contrib
 codelite
@@ -11,6 +11,7 @@ cmake
 cssed
 curl
 ddd
+eclipse
 empty-expect
 eric
 expect
@@ -48,6 +49,7 @@ libsdl1.2-dev
 libsmf-dev
 libsublime-dev
 libusb-dev
+libusb-1.0-0-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev
@@ -72,6 +74,7 @@ monodevelop-nunit
 monodevelop-versioncontrol
 nasm
 netbeans
+openjdk-7-jdk
 netexpect
 patchutils
 pida
@@ -81,13 +84,20 @@ python-all-dev
 python-cairo-dev
 python-gtk2-dev
 python-markdown
+python-parted
+python-pip
 python-rope
+python-virtualenv
+python-wxgtk2.8
 qgit
 qtcreator
 ruby
+ruby-dev
 ruby-gnome2
 spe
 spyder
+sqlite
+sqlite3
 swig
 valac
 virtaal

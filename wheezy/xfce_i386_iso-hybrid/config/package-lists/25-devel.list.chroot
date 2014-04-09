@@ -11,6 +11,7 @@ ddd
 docbook
 docbook-xml
 docbook-xsl
+eclipse
 empty-expect
 expect
 flex
@@ -66,6 +67,7 @@ monodevelop-database
 monodevelop-nunit
 monodevelop-versioncontrol
 nasm
+openjdk-7-jdk
 netexpect
 patchutils
 poedit
