@@ -1,0 +1,10 @@
+#!/bin/bash
+TMP="/tmp/mingus"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+
+hg clone https://code.google.com/p/mingus/
+cd mingus
+python setup.py build && python setup.py install
+
+rm -R -f -v ${TMP}
