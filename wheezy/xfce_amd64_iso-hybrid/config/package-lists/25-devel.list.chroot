@@ -1,4 +1,3 @@
-asciidoc
 bashdb
 bison
 bzr
@@ -6,9 +5,7 @@ codeblocks
 codeblocks-contrib
 codelite
 cmake
-docbook
-docbook-xml
-docbook-xsl
+eclipse
 expect
 flex
 geany
@@ -20,7 +17,6 @@ gnu-efi
 gphpedit
 gtranslator
 intltool
-libblkid-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev
@@ -64,12 +60,12 @@ monodevelop-nunit
 monodevelop-versioncontrol
 nasm
 netexpect
+openjdk-7-jdk
 patchutils
 poedit
 pyqt4-dev-tools
 python-all-dev
 python-cairo-dev
-python-central
 python-gtk2-dev
 python-markdown
 python-parted
@@ -82,6 +78,7 @@ ruby
 ruby-dev
 sqlite
 sqlite3
+swig
 wx3.0-doc
 wx3.0-examples
 wx3.0-headers
