@@ -11,7 +11,6 @@
  * ========================================================================================================
  */
 
-const _DEBUG_ = false;
 
 const IconTheme = imports.gi.Gtk.IconTheme;
 const GLib = imports.gi.GLib;
@@ -626,10 +625,8 @@ const PanelMenuButton = new Lang.Class({
         this.recentManager = Gtk.RecentManager.get_default();
         if (PlaceDisplay) {
             this.placesManager = new PlaceDisplay.PlacesManager();
-            if (_DEBUG_) global.log("PanelMenuButton: _init - initialized PlacesManager")
         } else {
             this.placesManager = null;
-            if (_DEBUG_) global.log("PanelMenuButton: _init - no PlacesManager")
         }
 
         this._display();
@@ -732,7 +729,6 @@ const PanelMenuButton = new Lang.Class({
                 }
             } else {
                 if (this.powerGroupBox.width > (this.groupCategoriesWorkspacesScrollBox.width + this.favoritesScrollBox.width)) {
-                    if (_DEBUG_) global.log("onOpenStateToggled - powerGroup width > categories-favorites");
                     this.userGroupBox.width = this.powerGroupBox.width;
                     let categoryWidth = this.powerGroupBox.width - this.favoritesScrollBox.width;
                     this.groupCategoriesWorkspacesScrollBox.width = categoryWidth;
@@ -741,7 +737,6 @@ const PanelMenuButton = new Lang.Class({
                     this.thumbnailsBox.actor.width = categoryWidth;
                     this.thumbnailsBox._actualThumbnailWidth = categoryWidth;
                 } else {
-                    if (_DEBUG_) global.log("onOpenStateToggled - powerGroup width < categories-favorites");
                     let groupWidth = this.groupCategoriesWorkspacesScrollBox.width + this.favoritesScrollBox.width;
                     this.powerGroupBox.width = groupWidth;
                     this.userGroupBox.width = groupWidth;
@@ -794,7 +789,6 @@ const PanelMenuButton = new Lang.Class({
             this.thumbnailsBoxFiller.height = 0;
             this.categoriesBox.width = this._widthCategoriesBox;
             this.categoriesBox.show();
-            if (_DEBUG_) global.log("toggleCategoryWorkspaceMode - categoryPlaces height = "+this.categoriesBox.height+" scrollbox height = "+this.groupCategoriesWorkspacesScrollBox.height);
         } else if (toMode == CategoryWorkspaceMode.WORKSPACE) {
             this._categoryWorkspaceMode = CategoryWorkspaceMode.WORKSPACE;
             if (this._widthCategoriesBox == 0) {
@@ -807,34 +801,27 @@ const PanelMenuButton = new Lang.Class({
             this.thumbnailsBox.actor.show();
             //this.thumbnailsBoxFiller.width = this.categoriesBox.width;
             this.thumbnailsBoxFiller.height = this.thumbnailsBox.actor.height;
-            if (_DEBUG_) global.log("toggleCategoryWorkspaceMode - thumbnailsBox height = "+this.thumbnailsBox.actor.height+" scrollbox height = "+this.groupCategoriesWorkspacesScrollBox.height);
         }
     },
 
     _loadCategories: function(dir, root) {
         var rootDir = root;
-        //if (_DEBUG_) global.log("_loadCategories: dir="+dir.get_menu_id()+" root="+rootDir);
         var iter = dir.iter();
         var nextType;
         while ((nextType = iter.next()) != GMenu.TreeItemType.INVALID) {
             if (nextType == GMenu.TreeItemType.ENTRY) {
-                //if (_DEBUG_) global.log("_loadCategories: TreeItemType.ENTRY");
                 var entry = iter.get_entry();
                 if (!entry.get_app_info().get_nodisplay()) {
-                    //if (_DEBUG_) global.log("_loadCategories: entry valid");
                     var app = Shell.AppSystem.get_default().lookup_app_by_tree_entry(entry);
                     if (rootDir) {
-                        //if (_DEBUG_) global.log("_loadCategories: push root.get_menu_id = "+rootDir.get_menu_id());
                         if (rootDir.get_menu_id())
                             this.applicationsByCategory[rootDir.get_menu_id()].push(app);
                     } else {
-                        //if (_DEBUG_) global.log("_loadCategories: push dir.get_menu_id = "+dir.get_menu_id());
                         if (dir.get_menu_id())
                             this.applicationsByCategory[dir.get_menu_id()].push(app);
                     }
                 }
             } else if (nextType == GMenu.TreeItemType.DIRECTORY) {
-                //if (_DEBUG_) global.log("_loadCategories: TreeItemType.DIRECTORY");
                 if (rootDir) {
                     this._loadCategories(iter.get_directory(), rootDir);
                 } else {
@@ -1041,7 +1028,6 @@ const PanelMenuButton = new Lang.Class({
     },
 
     _listWebBookmarks: function(pattern) {
-        if (_DEBUG_) global.log("_listWebBookmarks");
         if (!this._searchWebErrorsShown) {
             if (!Firefox.Gda) {
                 Main.notify(
@@ -1687,7 +1673,6 @@ const PanelMenuButton = new Lang.Class({
     },
 
     _display : function() {
-        if (_DEBUG_) global.log("PanelMenuButton: _display");
         // popupMenuSection holds the mainbox
         let section = new PopupMenu.PopupMenuSection();
 
@@ -1718,7 +1703,6 @@ const PanelMenuButton = new Lang.Class({
         this.groupCategoriesWorkspacesScrollBox.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.NEVER);
         this.groupCategoriesWorkspacesScrollBox.set_mouse_scrolling(true);
         this.groupCategoriesWorkspacesScrollBox.connect('button-release-event', Lang.bind(this, function(actor, event) {
-            if (_DEBUG_) global.log("categories-workspaces-scrollbox button release event");
             let button = event.get_button();
             if (button == 3) { //right click
                 this.toggleCategoryWorkspaceMode();
@@ -1960,7 +1944,6 @@ const PanelMenuButton = new Lang.Class({
         }
 
         //Load favorites
-        if (_DEBUG_) global.log("PanelMenuButton: _display - start loading favorites");
         this.favorites = [];
         let launchers = global.settings.get_strv('favorite-apps');
         let j = 0;
@@ -1995,7 +1978,6 @@ const PanelMenuButton = new Lang.Class({
                 ++j;
             }
         }
-        if (_DEBUG_) global.log("PanelMenuButton: _display - end loading favorites");
 
 
         // Workspaces thumbnails Box
@@ -2043,7 +2025,6 @@ const PanelMenuButton = new Lang.Class({
         this.categoriesBox.add_actor(appCategory.actor);
 
         // Load rest of categories
-        if (_DEBUG_) global.log("PanelMenuButton: _display - start loading categories");
         let tree = Shell.AppSystem.get_default().get_tree();
         let root = tree.get_root_directory();
         let iter = root.iter();
@@ -2091,7 +2072,6 @@ const PanelMenuButton = new Lang.Class({
                 }
             }
         }
-        if (_DEBUG_) global.log("PanelMenuButton: _display - end loading categories");
 
         // PowerGroupBox
         this.powerGroupBox = new St.BoxLayout({ style_class: 'gnomenu-power-group-box'});
@@ -2416,22 +2396,18 @@ const GnoMenuButton = new Lang.Class({
     },
 
     refresh: function() {
-        if (_DEBUG_) global.log("GnoMenu: refresh");
         this._clearAll();
         this._display();
     },
 
     _clearAll: function() {
-        if (_DEBUG_) global.log("GnoMenu: _clearAll");
         if (this._hotCorner) this.actor.remove_actor(this._hotCorner.actor);
         if (this._hotCorner) this._hotCorner.destroy();
         this._hotCorner = null;
-        if (_DEBUG_) global.log("GnoMenu: _clearAll removed and destroyed hotcorner from gnomenu actor");
 
         if (this._hotspot) this._hotspot.destroy();
         this._hotspot = null;
         this._hotspotId = null;
-        if (_DEBUG_) global.log("GnoMenu: _clearAll removed and destroyed hotspot from gnomenu actor");
 
         if (gsVersion[1] > 4) {
             if (this.viewButton) this.actor.remove_actor(this.viewButton.container);
@@ -2442,15 +2418,12 @@ const GnoMenuButton = new Lang.Class({
             if (this.appsButton) this.actor.remove_actor(this.appsButton.actor);
             if (this.appsMenuButton) this.actor.remove_actor(this.appsMenuButton.actor);
         }
-        if (_DEBUG_) global.log("GnoMenu: _clearAll removed panel buttons from gnomenu actor");
 
         if (this.viewButton) this.viewButton.actor.destroy();
         this.viewButton = null;
-        if (_DEBUG_) global.log("GnoMenu: _clearAll destroyed view button");
 
         if (this.appsButton) this.appsButton.actor.destroy();
         this.appsButton = null;
-        if (_DEBUG_) global.log("GnoMenu: _clearAll destroyed apps button");
 
         if (this.appsMenuButton) {
             // Unbind menu accelerator key
@@ -2462,11 +2435,9 @@ const GnoMenuButton = new Lang.Class({
             this.appsMenuButton.destroy();
         }
         this.appsMenuButton = null;
-        if (_DEBUG_) global.log("GnoMenu: _clearAll destroyed menu button");
     },
 
     _display: function() {
-        if (_DEBUG_) global.log("GnoMenu: _display");
         // Initialize view button
         if (!settings.get_boolean('hide-panel-view')) {
             let viewLabel = _('View');
@@ -2476,7 +2447,6 @@ const GnoMenuButton = new Lang.Class({
             this.viewButton = new PanelButton(viewLabel);
             this.viewButton.actor.connect('button-release-event', Lang.bind(this, this._onViewButtonRelease));
         }
-        if (_DEBUG_) global.log("GnoMenu: _display initialized view button");
 
         // Initialize apps button
         if (!settings.get_boolean('hide-panel-apps')) {
@@ -2487,13 +2457,11 @@ const GnoMenuButton = new Lang.Class({
             this.appsButton = new PanelButton(appsLabel);
             this.appsButton.actor.connect('button-release-event', Lang.bind(this, this._onAppsButtonRelease));
         }
-        if (_DEBUG_) global.log("GnoMenu: _display initialized apps button");
 
         // Initialize apps menu button
         if (!settings.get_boolean('hide-panel-menu')) {
             this.appsMenuButton = new PanelMenuButton();
             this.appsMenuButton.actor.connect('notify::allocation', Lang.bind(this, this._onAppsMenuButtonAllocate));
-            if (_DEBUG_) global.log("GnoMenu: _display initialized menu button");
 
             // Add hotspot area 1px high at top of appsMenuButton
             if (!settings.get_boolean('disable-panel-menu-hotspot')) {
@@ -2501,7 +2469,6 @@ const GnoMenuButton = new Lang.Class({
                 Main.layoutManager.addChrome(this._hotspot);
                 this._hotspot.connect('enter-event', Lang.bind(this, this._onAppsMenuButtonHotSpotEntered));
                 this._hotspotId = this._hotspot.connect('realize', Lang.bind(this, function(){}));
-                if (_DEBUG_) global.log("GnoMenu: _display initialized menu hotspot");
             }
 
             // Bind menu accelerator key
@@ -2538,11 +2505,9 @@ const GnoMenuButton = new Lang.Class({
             if (this.appsButton) this.actor.add(this.appsButton.actor);
             if (this.appsMenuButton) this.actor.add(this.appsMenuButton.actor);
         }
-        if (_DEBUG_) global.log("GnoMenu: _display added buttons to gnomenu actor");
 
         // Disable or Enable Hot Corner
         if (settings.get_boolean('disable-panel-view-hotcorner')) {
-            if (_DEBUG_) global.log("GnoMenu: _display disabled hot corner");
             if (gsVersion[1] > 6) {
                 let primary = Main.layoutManager.primaryIndex;
                 let corner = Main.layoutManager.hotCorners[primary];
@@ -2562,7 +2527,6 @@ const GnoMenuButton = new Lang.Class({
                 // Do nothing. GS34-GS36 hot corner is disabled when activities button is hidden
             }
         } else {
-            if (_DEBUG_) global.log("GnoMenu: _display enabled hot corner");
             if (gsVersion[1] > 6) {
                 let primary = Main.layoutManager.primaryIndex;
                 let corner = Main.layoutManager.hotCorners[primary];
@@ -2574,9 +2538,7 @@ const GnoMenuButton = new Lang.Class({
                     // Need to create corner to setup pressure barrier
                     // to trigger overview
                     if (corner && corner._pressureBarrier) {
-                        if (_DEBUG_) global.log("corner & pressureBarrier exist ");
                     } else {
-                        if (_DEBUG_) global.log("corner & pressureBarrier don't exist - updateHotCorners");
                         Main.layoutManager._updateHotCorners();
                     }
                 }
@@ -2603,7 +2565,6 @@ const GnoMenuButton = new Lang.Class({
             let [w, h] = this.appsMenuButton.actor.get_size();
             x = Math.floor(x);
             w = Math.floor(w);
-            if (_DEBUG_) global.log("_onGnoMenuPanelButtonAllocate x="+x+"  w="+w);
             this._hotspot.set_position(x, 0);
             this._hotspot.set_size(w, 1);
         }
@@ -2617,7 +2578,6 @@ const GnoMenuButton = new Lang.Class({
             let [w, h] = this.appsMenuButton.actor.get_size();
             x = Math.floor(x);
             w = Math.floor(w);
-            if (_DEBUG_) global.log("_onAppsMenuButtonAllocate x="+x+"  w="+w);
             this._hotspot.set_position(x, 0);
             this._hotspot.set_size(w, 1);
         }
@@ -2625,7 +2585,6 @@ const GnoMenuButton = new Lang.Class({
 
     // handler for when view panel button clicked
     _onViewButtonRelease: function() {
-        if (_DEBUG_) global.log("_onViewButtonRelease");
         let viewSelector = gsVersion[1] < 10 ? Main.overview._viewSelector : Main.overview.viewSelector;
         if (Main.overview.visible) {
             if (gsVersion[1] > 4) { // GS 3.6+
@@ -2649,7 +2608,6 @@ const GnoMenuButton = new Lang.Class({
 
     // handler for when apps panel button clicked
     _onAppsButtonRelease: function() {
-        if (_DEBUG_) global.log("_onAppsButtonRelease");
         let viewSelector = gsVersion[1] < 10 ? Main.overview._viewSelector : Main.overview.viewSelector;
         if (Main.overview.visible) {
             if (gsVersion[1] > 4) { // GS 3.6+
@@ -2678,7 +2636,6 @@ const GnoMenuButton = new Lang.Class({
 
     // handler for when appsMenuButton hotspot entered
     _onAppsMenuButtonHotSpotEntered: function() {
-        if (_DEBUG_) global.log("_onAppsMenuButtonHotSpotEntered");
         if (this.appsMenuButton) {
             if (!this.appsMenuButton.menu.isOpen)
                 this.appsMenuButton.menu.toggle();
@@ -2687,7 +2644,6 @@ const GnoMenuButton = new Lang.Class({
 
     // function called during init to position hot corner for GS 3.4-GS3.6
     _positionHotCorner: function() {
-        if (_DEBUG_) global.log("_positionHotCorner");
         // The hot corner needs to be outside any padding/alignment
         // that has been imposed on us
         let primary = Main.layoutManager.primaryMonitor;
@@ -2712,7 +2668,6 @@ const GnoMenuButton = new Lang.Class({
 
     // handler for when theme changes
     _onStyleChanged: function() {
-        if (_DEBUG_) global.log("_onStyleChanged");
         let ret = this._changeStylesheet();
         //if (ret) {
             //if (this.appsMenuButton) this.appsMenuButton.actor.grab_key_focus();
@@ -2724,7 +2679,6 @@ const GnoMenuButton = new Lang.Class({
     },
 
     _changeStylesheet: function() {
-        if (_DEBUG_) global.log("_changeStylesheet");
         // Get menu layout
         let ml = "";
         if (settings.get_enum('menu-layout') == MenuLayout.SMALL) {
@@ -2745,12 +2699,10 @@ const GnoMenuButton = new Lang.Class({
 
         // Get theme directory
         let themeDirectory = GLib.path_get_dirname(themeStylesheet);
-        if (_DEBUG_) global.log("new theme = "+themeStylesheet);
 
         // Test for gnomenu stylesheet
         let newStylesheet = themeDirectory + '/extensions/gno-menu/' + filename;
         if (!GLib.file_test(newStylesheet, GLib.FileTest.EXISTS)) {
-            if (_DEBUG_) global.log("Theme doesn't support gnomenu .. use default stylesheet");
             let defaultStylesheet = Gio.File.new_for_path(Me.path + "/themes/default/" + filename);
             if (defaultStylesheet.query_exists(null)) {
                 newStylesheet = defaultStylesheet.get_path();
@@ -2760,7 +2712,6 @@ const GnoMenuButton = new Lang.Class({
         }
 
         if (GnoMenuStylesheet && GnoMenuStylesheet == newStylesheet) {
-            if (_DEBUG_) global.log("No change in stylesheet. Exit");
             return false;
         }
 
@@ -2769,12 +2720,10 @@ const GnoMenuButton = new Lang.Class({
         if (!themeContext)
             return false;
 
-        if (_DEBUG_) global.log("themeContext is valid");
         let theme = themeContext.get_theme();
         if (!theme)
             return false;
 
-        if (_DEBUG_) global.log("theme is valid");
         let customStylesheets = theme.get_custom_stylesheets();
         if (!customStylesheets)
             return false;
@@ -2789,9 +2738,7 @@ const GnoMenuButton = new Lang.Class({
             }
         }
 
-        if (_DEBUG_) global.log("Removed previous stylesheet");
         newTheme.load_stylesheet(GnoMenuStylesheet);
-        if (_DEBUG_) global.log("Added new stylesheet");
         themeContext.set_theme (newTheme);
         if (this.appsMenuButton) this.appsMenuButton.refresh();
 
@@ -2800,25 +2747,21 @@ const GnoMenuButton = new Lang.Class({
 
     // handler for when new application installed
     _onAppInstalledChanged: function() {
-        if (_DEBUG_) global.log("_onAppInstalledChanged");
         if (this.appsMenuButton) this.appsMenuButton.refresh();
     },
 
     // handler for when favorites change
     _onFavoritesChanged: function() {
-        if (_DEBUG_) global.log("_onFavoritesChanged");
         if (this.appsMenuButton) this.appsMenuButton.refresh();
     },
 
     // handler for when icons change
     _onIconsChanged: function() {
-        if (_DEBUG_) global.log("_onIconsChanged");
         if (this.appsMenuButton) this.appsMenuButton.refresh();
     },
 
     // function to bind preference setting changes
     _bindSettingsChanges: function() {
-        if (_DEBUG_) global.log("_bindSettingsChanges");
         settings.connect('changed::hide-panel-view', Lang.bind(this, this.refresh));
         settings.connect('changed::disable-panel-view-hotcorner', Lang.bind(this, this.refresh));
         settings.connect('changed::custom-panel-view-label', Lang.bind(this, this.refresh));
@@ -2875,7 +2818,6 @@ const GnoMenuButton = new Lang.Class({
 
 
 function loadStylesheet() {
-    if (_DEBUG_) global.log("GnoMenu loadStylesheet");
     // Get menu layout
     let ml = "";
     if (settings.get_enum('menu-layout') == MenuLayout.SMALL) {
@@ -2900,7 +2842,6 @@ function loadStylesheet() {
     // Test for gnomenu stylesheet
     GnoMenuStylesheet = themeDirectory + '/extensions/gno-menu/' + filename;
     if (!GLib.file_test(GnoMenuStylesheet, GLib.FileTest.EXISTS)) {
-        if (_DEBUG_) global.log("Theme doesn't support gnomenu .. use default stylesheet");
         let defaultStylesheet = Gio.File.new_for_path(Me.path + "/themes/default/" + filename);
         if (defaultStylesheet.query_exists(null)) {
             GnoMenuStylesheet = defaultStylesheet.get_path();
@@ -2923,7 +2864,6 @@ function loadStylesheet() {
 }
 
 function unloadStylesheet() {
-    if (_DEBUG_) global.log("GnoMenu unloadStylesheet");
     let themeContext = St.ThemeContext.get_for_stage(global.stage);
     if (!themeContext)
         return false;
@@ -2951,7 +2891,6 @@ let GnoMenuStylesheet = null;
 
 function enable() {
 
-    if (_DEBUG_) global.log("GnoMenu ENABLE");
     // Load stylesheet
     loadStylesheet();
 
@@ -2981,7 +2920,6 @@ function enable() {
 
 function disable() {
 
-    if (_DEBUG_) global.log("GnoMenu DISABLE");
     // Unload stylesheet
     unloadStylesheet();
 
