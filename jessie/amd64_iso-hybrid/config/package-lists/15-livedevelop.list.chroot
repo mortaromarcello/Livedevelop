@@ -105,7 +105,7 @@ php5-curl
 php5-gd
 php5-mcrypt
 php5-mysql
-php5-pecl-http
+php5-apcu
 php5-tidy
 pigz
 plzip
