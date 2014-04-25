@@ -28,7 +28,6 @@ disktype
 dmidecode
 dmraid
 dmsetup
-drbl-chntpw
 dsniff
 efibootmgr
 encfs
@@ -85,19 +84,16 @@ mbr
 mdadm
 microcom
 minicom
-mkswap-uuid
 myrescue
 mysql-server
 mysql-client
 netsed
 nautilus-open-terminal
 nfs-kernel-server
-netsniff-ng
 ngrep
 ophcrack
 openssh-server
 p0f
-partclone
 parted
 partitionmanager
 pbzip2
@@ -109,6 +105,8 @@ php5-curl
 php5-gd
 php5-mcrypt
 php5-mysql
+php5-pgsql
+php5-apcu
 php5-tidy
 pigz
 plzip

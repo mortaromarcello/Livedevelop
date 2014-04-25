@@ -8,7 +8,6 @@ codelite
 cmake
 curl
 ddd
-drupal
 eclipse
 empty-expect
 expect
@@ -74,7 +73,6 @@ netbeans
 openjdk-7-jdk
 netexpect
 patchutils
-phpmyadmin
 pida
 poedit
 pyqt4-dev-tools
