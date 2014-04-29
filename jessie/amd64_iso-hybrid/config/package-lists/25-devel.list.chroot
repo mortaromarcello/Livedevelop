@@ -8,12 +8,16 @@ codelite
 cmake
 curl
 ddd
+eagle
 eclipse
 empty-expect
 expect
 flex
+fritzing
 geany
 geany-plugins
+geda
+geda-xgsch2pcb
 gperf
 git
 git-gui
