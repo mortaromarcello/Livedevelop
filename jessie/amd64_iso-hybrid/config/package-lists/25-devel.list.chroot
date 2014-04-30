@@ -8,7 +8,7 @@ codelite
 cmake
 curl
 ddd
-eagle
+eagle:i386
 eclipse
 empty-expect
 expect
