@@ -1,4 +1,3 @@
-adminer
 bison
 bless
 bluefish
@@ -9,12 +8,16 @@ codelite
 cmake
 curl
 ddd
+eagle
 eclipse
 empty-expect
 expect
 flex
+fritzing
 geany
 geany-plugins
+geda
+geda-xgsch2pcb
 gperf
 git
 git-gui
@@ -71,8 +74,8 @@ monodevelop-nunit
 monodevelop-versioncontrol
 nasm
 netbeans
-openjdk-7-jdk
 netexpect
+openjdk-7-jdk
 patchutils
 pida
 poedit

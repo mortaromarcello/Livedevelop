@@ -28,7 +28,6 @@ disktype
 dmidecode
 dmraid
 dmsetup
-drbl-chntpw
 dsniff
 efibootmgr
 encfs
@@ -71,6 +70,7 @@ libc6:i386
 libncurses5:i386
 libstdc++6:i386
 live-boot
+live-build
 live-config
 lrzip
 lshw
@@ -112,6 +112,8 @@ php5-curl
 php5-gd
 php5-mcrypt
 php5-mysql
+php5-pgsql
+php5-apcu
 php5-tidy
 pigz
 plzip
