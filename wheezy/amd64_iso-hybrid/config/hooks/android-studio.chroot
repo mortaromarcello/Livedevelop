@@ -2,8 +2,9 @@
 TMP="/tmp/android"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 rm -R -f -v ${TMP}/*
-VERSIONE="133.970939"
-wget http://dl.google.com/android/studio/install/0.4.2/android-studio-bundle-${VERSIONE}-linux.tgz
+VERSIONE="135.1078000"
+SUBVER="0.5.2"
+wget http://dl.google.com/android/studio/install/${SUBVER}/android-studio-bundle-${VERSIONE}-linux.tgz
 if [ ! -d /opt ]; then
   mkdir -m 0755 -p /opt
 fi
