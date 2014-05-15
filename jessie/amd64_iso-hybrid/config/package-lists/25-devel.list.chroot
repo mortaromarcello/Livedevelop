@@ -10,6 +10,7 @@ curl
 ddd
 eagle:i386
 eclipse
+electric
 empty-expect
 expect
 flex
@@ -23,6 +24,7 @@ git
 git-gui
 gjs
 glade
+glogic
 gnome-devel
 gnu-efi
 gphpedit
