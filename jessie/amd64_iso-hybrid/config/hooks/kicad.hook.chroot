@@ -1,0 +1,11 @@
+#!/bin/bash
+TMP="/tmp/kicad"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+
+wget http://bazaar.launchpad.net/~kicad-product-committers/kicad/product/download/maciej.suminski%40cern.ch-20140512151751-nsbhdj247j8at2pr/kicadinstallno_launc-20140318184928-k2p56n5eunlyopuh-1/kicad-install.sh
+
+chmod +x ./kicad-install.sh
+./kicad-install.sh --install-or-update
+
+rm -R -f -v ${TMP}
