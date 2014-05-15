@@ -90,6 +90,7 @@ python-markdown
 python-parted
 python-pip
 python-rope
+python-psutil
 python-virtualenv
 python-wxgtk2.8
 qgit
