@@ -171,4 +171,4 @@ xfsprogs
 xiphos
 xsensors
 zerofree
-zfs-fuse
+#zfs-fuse

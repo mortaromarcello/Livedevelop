@@ -27,6 +27,8 @@ php5-mcrypt
 php5-mysql
 php5-tidy
 proftpd-basic
+qemu
+qemu-kvm
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
 sword-text-kjv

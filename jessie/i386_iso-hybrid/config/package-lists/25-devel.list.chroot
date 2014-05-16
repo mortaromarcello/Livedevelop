@@ -2,14 +2,18 @@ bison
 bless
 bluefish
 bzr
+bzrtools
 codeblocks
 codeblocks-contrib
 codelite
 cmake
+cmake-curses-gui
 curl
 ddd
+doxygen
 eagle
 eclipse
+electric
 empty-expect
 expect
 flex
@@ -23,6 +27,7 @@ git
 git-gui
 gjs
 glade
+glogic
 gnome-devel
 gnu-efi
 gphpedit
@@ -30,6 +35,7 @@ gtranslator
 intltool
 lazarus
 leksah
+libbz2-dev
 libfontconfig1-dev
 libfribidi-dev
 libghc-gtk-dev
@@ -47,6 +53,8 @@ libqt4-dev
 libreadline-dev
 libsdl1.2-dev
 libsmf-dev
+libssl-dev
+libssl-doc
 libsublime-dev
 libusb-dev
 libusb-1.0-0-dev

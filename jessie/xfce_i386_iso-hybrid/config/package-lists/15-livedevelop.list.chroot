@@ -9,6 +9,7 @@ dmraid
 dmsetup
 evince-gtk
 extlinux
+file-roller
 filezilla
 fslint
 gksu
@@ -40,5 +41,4 @@ sword-text-kjv
 syslinux
 vinagre
 virtualbox
-warzone2100
 xiphos

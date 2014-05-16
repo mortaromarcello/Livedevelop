@@ -155,7 +155,6 @@ vlan
 vmfs-tools
 w3af
 wakeonlan
-warzone2100
 wipe
 wireshark
 xprobe
@@ -163,4 +162,4 @@ xfsprogs
 xiphos
 xsensors
 zerofree
-zfs-fuse
+#zfs-fuse
