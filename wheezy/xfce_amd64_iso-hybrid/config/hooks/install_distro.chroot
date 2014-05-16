@@ -1,13 +1,17 @@
 #!/bin/bash
 TMP="/tmp/scripts"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v *
+rm -R -f -v ${TMP}/*
 git clone https://github.com/mortaromarcello/scripts
 cd scripts
 cp -v ./yad_install_distro.sh /usr/local/bin/yad_install_distro.sh
 chmod -v +x /usr/local/bin/yad_install_distro.sh
 cp -v ./simple_install_distro.sh /usr/local/bin/install_distro.sh
 chmod -v +x /usr/local/bin/install_distro.sh
+cp -v ./install_distro.py /usr/local/bin/install_distro
+chmod -v +x /usr/local/bin/install_distro
+mkdir -p /usr/local/share/locale/it/LC_MESSAGES
+cp -v ./locale/it/LC_MESSAGES/install_distro.mo /usr/local/share/locale/it/LC_MESSAGES
 cp -v ./at.sh /usr/local/bin/at.sh
 chmod -v +x /usr/local/bin/at.sh
 cp -v ./crypt_word.sh /usr/local/bin/crypt_word.sh

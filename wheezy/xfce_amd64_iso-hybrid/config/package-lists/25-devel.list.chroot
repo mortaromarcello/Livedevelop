@@ -1,6 +1,7 @@
 bashdb
 bison
 bzr
+curl
 codeblocks
 codeblocks-contrib
 codelite
@@ -8,6 +9,7 @@ cmake
 eagle:i386
 eclipse
 electric
+empty-expect
 expect
 flex
 fritzing
