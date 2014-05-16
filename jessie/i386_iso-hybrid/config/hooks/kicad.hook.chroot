@@ -1,0 +1,70 @@
+#!/bin/bash
+TMP="/tmp/kicad"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+
+WORKING_TREES=${TMP}
+
+STABLE=tag:pre-kiway    # currently the best mix of features and stabilty
+TESTING=last:1          # the most recent
+
+
+# Set this to STABLE or TESTING or other known revision number:
+REVISION=$STABLE
+
+# For info on revision syntax:
+# $ bzr help revisionspec
+
+
+# CMake Options
+#OPTS="$OPTS -DBUILD_GITHUB_PLUGIN=OFF"
+
+# Python scripting, uncomment to enable
+#OPTS="$OPTS -DKICAD_SCRIPTING=ON -DKICAD_SCRIPTING_MODULES=ON -DKICAD_SCRIPTING_WXPYTHON=ON"
+
+# Use https under bazaar to retrieve repos because this does not require a
+# launchpad.net account.  Whereas lp:<something> requires a launchpad account.
+# https results in read only access.
+REPOS=https://code.launchpad.net
+
+# This branch is a bzr/launchpad import of the Git repository
+# at https://github.com/KiCad/kicad-library.git.
+# It has schematic parts and 3D models in it.
+LIBS_REPO=$REPOS/~kicad-product-committers/kicad/library
+
+SRCS_REPO=$REPOS/~kicad-product-committers/kicad/product
+DOCS_REPO=$REPOS/~kicad-developers/kicad/doc
+
+#apt-get install --yes bzr bzrtools build-essential cmake cmake-curses-gui debhelper doxygen  grep libbz2-dev libcairo2-dev libglew-dev libssl-dev libwxgtk2.8-dev python-wxgtk2.8
+
+bzr whoami || {
+        echo "WARNING: You have not set bzr whoami, so I will set a dummy."
+        export BZR_EMAIL="Kicad Build <nobody@foo>"
+    }
+
+if [ ! -d "$WORKING_TREES" ]; then
+    sudo mkdir -p "$WORKING_TREES"
+    echo " mark $WORKING_TREES as owned by me"
+    sudo chown -R `whoami` "$WORKING_TREES"
+fi
+#cd $WORKING_TREES
+bzr checkout -r $REVISION $SRCS_REPO kicad.bzr
+bzr checkout $LIBS_REPO kicad-lib.bzr
+bzr checkout $DOCS_REPO kicad-doc.bzr
+cd kicad.bzr
+mkdir build && cd build
+cmake $OPTS ../
+make -j4
+make install
+cd ../../kicad-lib.bzr
+mkdir build && cd build
+cmake ../
+make install
+make install_github_fp-lib-table
+cd ../../kicad-doc.bzr
+mkdir build && cd build
+cmake ../
+make install
+sudo sh -c "echo KIGITHUB=https://github.com/KiCad >> /etc/environment"
+
+rm -R -f -v ${TMP}
