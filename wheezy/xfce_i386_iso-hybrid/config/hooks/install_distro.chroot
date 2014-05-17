@@ -8,10 +8,15 @@ cp -v ./yad_install_distro.sh /usr/local/bin/yad_install_distro.sh
 chmod -v +x /usr/local/bin/yad_install_distro.sh
 cp -v ./simple_install_distro.sh /usr/local/bin/install_distro.sh
 chmod -v +x /usr/local/bin/install_distro.sh
-cp -v ./install_distro.py /usr/local/bin/install_distro
+
+INSTALL_DISTRO="/usr/local/share/install_distro"
+mkdir -p ${INSTALL_DISTRO}
+cp -v ./install_distro{.py,.png} ${INSTALL_DISTRO}
+chmod -v +x ${INSTALL_DISTRO}/install_distro.py
+cp -R -v ./locale ${INSTALL_DISTRO}
+cp -v ./install_distro /usr/local/bin
 chmod -v +x /usr/local/bin/install_distro
-mkdir -p /usr/local/share/locale/it/LC_MESSAGES
-cp -v ./locale/it/LC_MESSAGES/install_distro.mo /usr/local/share/locale/it/LC_MESSAGES
+
 cp -v ./at.sh /usr/local/bin/at.sh
 chmod -v +x /usr/local/bin/at.sh
 cp -v ./crypt_word.sh /usr/local/bin/crypt_word.sh
