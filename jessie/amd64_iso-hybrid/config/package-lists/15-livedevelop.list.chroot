@@ -10,6 +10,7 @@ bleachbit
 bsdutils
 btrfs-tools
 busybox
+cabextract
 calibre
 checkinstall
 chntpw
@@ -55,6 +56,7 @@ hfsprogs
 hfsutils
 hping3
 hunt
+icoutils
 ipxe
 jfsutils
 john
@@ -155,6 +157,7 @@ vlan
 vmfs-tools
 w3af
 wakeonlan
+wine-bin:i386
 wipe
 wireshark
 xprobe
