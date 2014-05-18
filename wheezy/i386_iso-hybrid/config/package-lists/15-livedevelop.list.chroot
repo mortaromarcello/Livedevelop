@@ -10,6 +10,7 @@ bleachbit
 bsdutils
 btrfs-tools
 busybox
+cabextract
 calibre
 checkinstall
 chntpw
@@ -58,6 +59,7 @@ hfsutils
 hping3
 hunt
 hwinfo
+icoutils
 ipxe
 jfsutils
 john
