@@ -1,0 +1,23 @@
+#!/bin/bash
+TMP="/tmp/POL"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+PATH_OUT="/opt/POL"
+rm -R -f -v ${PATH_OUT}
+
+git clone https://github.com/PlayOnLinux/POL-POM-4.git
+cd ./POL-POM-4
+mkdir -p ${PATH_OUT}
+cp -R -v * ${PATH_OUT}
+cat >/usr/share/applications/playonlinux.desktop<<EOF
+[Desktop Entry]
+Type=Application
+Name=Play On Linux
+Comment=
+Icon=/opt/POL/resources/images/pol_min.png
+Exec=/opt/POL/playonlinux
+Terminal=false
+Categories=Emulator;Wine;
+EOF
+
+rm -R -f -v ${TMP}
