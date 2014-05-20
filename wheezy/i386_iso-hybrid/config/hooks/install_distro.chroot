@@ -13,7 +13,7 @@ INSTALL_DISTRO="/usr/local/share/install_distro"
 mkdir -p ${INSTALL_DISTRO}
 cp -v ./install_distro{.py,.png} ${INSTALL_DISTRO}
 chmod -v +x ${INSTALL_DISTRO}/install_distro.py
-cp -R -v ./locale ${INSTALL_DISTRO}
+cp -R -v ./locale /usr/local/share/
 cp -v ./install_distro /usr/local/bin
 chmod -v +x /usr/local/bin/install_distro
 cat >/usr/share/applications/install_distro.desktop<<EOF
@@ -22,7 +22,7 @@ Type=Application
 Name=Installa Livedevelop
 Comment=
 Icon=/usr/local/share/install_distro/install_distro.png
-Exec=/usr/local/bin/install_distro
+Exec=x-terminal-emulator -e gksu /usr/local/bin/install_distro
 Terminal=false
 Categories=System;
 EOF
