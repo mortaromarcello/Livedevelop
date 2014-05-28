@@ -4,7 +4,7 @@ bzr
 curl
 codeblocks
 codeblocks-contrib
-codelite
+#codelite
 cmake
 eagle
 eclipse
@@ -26,6 +26,7 @@ gtranslator
 intltool
 libfontconfig1-dev
 libfribidi-dev
+libfuse-dev
 libghc-gtk-dev
 libgirepository1.0-dev
 libglew-dev
@@ -47,11 +48,11 @@ libusb-1.0-0-dev
 libtheora-dev
 libvorbis-dev
 libxrandr-dev
-libwxbase3.0-dbg
-libwxbase3.0-dev
+libwxbase2.8-dbg
+libwxbase2.8-dev
 libwxgtk3.0-dev
 libwxgtk2.8-dev
-libwxsmithlib-dev
+libwxsmithlib0-dev
 kdelibs5-dev
 kdevelop
 kdevelop-l10n
@@ -88,9 +89,9 @@ ruby-dev
 sqlite
 sqlite3
 swig
-wx3.0-doc
-wx3.0-examples
-wx3.0-headers
-wx3.0-i18n
-wxcrafter
+wx2.8-doc
+wx2.8-examples
+wx2.8-headers
+wx2.8-i18n
+#wxcrafter
 zlib1g-dev
