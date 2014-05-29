@@ -3,16 +3,11 @@ TMP="/tmp/truecrypt"
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 rm -R -f -v ${TMP}/*
 
-wget https://www.dropbox.com/s/r4myydz5q485u4a/TrueCrypt%207.1a%20Source.tar.gz
-tar xfv "TrueCrypt 7.1a Source.tar.gz"
-cd truecrypt-7.1a-source
-wget ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-11/v2-20/pkcs11.h
-wget ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-11/v2-20/pkcs11f.h
-wget ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-11/v2-20/pkcs11t.h
-export PKCS11_INC=${TMP}/truecrypt-7.1a-source
-make
-cp -v Main/truecrypt /usr/local/bin/
-cp -v Resources/Icons/TrueCrypt-48x48.xpm /usr/share/icons/truecrypt.xpm
+#wget https://www.dropbox.com/s/4l1td8w1tu3feea/truecrypt-x64
+wget https://www.dropbox.com/s/6o9h9nxatqt8sjl/truecrypt-x86
+wget https://www.dropbox.com/s/qq6wmzifwrf59vi/TrueCrypt-48x48.xpm
+cp -v truecrypt-x86 /usr/local/bin/truecrypt
+cp -v TrueCrypt-48x48.xpm /usr/share/icons/truecrypt.xpm
 
 cat > /usr/share/applications/truecrypt.desktop <<EOF
 [Desktop Entry]
