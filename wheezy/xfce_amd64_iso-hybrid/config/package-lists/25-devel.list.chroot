@@ -86,6 +86,7 @@ python-wxgtk2.8
 qtcreator
 ruby
 ruby-dev
+spyder
 sqlite
 sqlite3
 swig
@@ -93,5 +94,6 @@ wx2.8-doc
 wx2.8-examples
 wx2.8-headers
 wx2.8-i18n
+winpdb
 #wxcrafter
 zlib1g-dev
