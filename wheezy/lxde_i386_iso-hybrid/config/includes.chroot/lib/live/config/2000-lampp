@@ -1,0 +1,3 @@
+#!/bin/bash
+
+chgrp www-data /home/${LIVE_USERNAME}/public_html
