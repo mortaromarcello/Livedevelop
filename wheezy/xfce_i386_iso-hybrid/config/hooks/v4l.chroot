@@ -1,0 +1,14 @@
+#!/bin/bash
+TMP="/tmp/v4l"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+
+sudo apt-get install --yes build-essential module-assistant mercurial
+m-a update
+m-a prepare
+git clone git://linuxtv.org/media_build.git
+cd media_build
+./build
+make install
+
+rm -R -f -v ${TMP}
