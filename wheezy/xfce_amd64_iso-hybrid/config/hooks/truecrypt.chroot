@@ -4,6 +4,7 @@ TMP="/tmp/truecrypt"
 rm -R -f -v ${TMP}/*
 
 wget https://www.dropbox.com/s/4l1td8w1tu3feea/truecrypt-x64
+#wget https://www.dropbox.com/s/6o9h9nxatqt8sjl/truecrypt-x86
 wget https://www.dropbox.com/s/qq6wmzifwrf59vi/TrueCrypt-48x48.xpm
 cp -v truecrypt-x64 /usr/local/bin/truecrypt
 chmod +x /usr/local/bin/truecrypt

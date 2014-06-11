@@ -1,11 +1,16 @@
 #!/bin/bash
 TMP="/tmp/v4l"
+MACHINE=$(uname -m)
+if [ "${MACHINE}" != "x86_64" ]; then
+    exit
+fi
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 rm -R -f -v ${TMP}/*
+VER=$(uname -r)
 
-sudo apt-get install --yes build-essential module-assistant mercurial
+sudo apt-get install --yes build-essential module-assistant mercurial linux-headers-${VER}
 m-a update
-m-a prepare
+#m-a prepare
 git clone git://linuxtv.org/media_build.git
 cd media_build
 ./build

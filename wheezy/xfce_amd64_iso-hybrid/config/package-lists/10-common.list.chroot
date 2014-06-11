@@ -4,8 +4,8 @@ user-setup
 eject
 ### Live common packages
 build-essential
-chromium
-chromium-l10n
+#chromium
+#chromium-l10n
 dict-freedict-eng-ita
 dict-freedict-ita-eng
 dosfstools
@@ -14,6 +14,7 @@ firmware-linux
 firmware-realtek
 flashplugin-nonfree
 goldendict
+google-chrome-stable
 gparted
 gstreamer0.10-plugins-bad
 k3b
