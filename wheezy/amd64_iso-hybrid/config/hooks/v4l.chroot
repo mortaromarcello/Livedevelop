@@ -1,7 +1,11 @@
 #!/bin/bash
 TMP="/tmp/v4l"
 MACHINE=$(uname -m)
+<<<<<<< HEAD
+if [ "${MACHINE}" != "x86_64" ]; then
+=======
 if [ "${MACHINE}" != "amd64" ]; then
+>>>>>>> 258cb68bd055fab6a47195017e96901eec0d136b
     exit
 fi
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}

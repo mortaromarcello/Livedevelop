@@ -26,6 +26,7 @@ libavahi-compat-libdnssd1
 libc6:i386
 libncurses5:i386
 libstdc++6:i386
+kaffeine
 mdadm
 microcom
 minicom
