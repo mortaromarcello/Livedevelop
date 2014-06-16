@@ -1,0 +1,28 @@
+#!/bin/bash
+TMP="/tmp/avidemux"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+
+apt-get install --yes libxml2-dev gcc g++ make cmake pkg-config libpng12-dev fakeroot yasm libsqlite3-dev libqt4-dev libmp3lame-dev libx264-dev  libfaad-dev
+wget http://downloads.sourceforge.net/avidemux/avidemux_2.6.8.tar.gz
+tar xfv ./avidemux_2.6.8.tar.gz
+cd avidemux_2.6.8
+chmod +x ./bootStrap.bash
+./bootStrap.bash
+cp -R -v install/usr/* /usr/
+cp -v avidemux_icon.png /usr/share/icons/avidemux.png
+
+cat > /usr/share/applications/avidemux.desktop <<EOF
+[Desktop Entry]
+Encoding=UTF-8
+Name=avidemux
+Comment=Video Editor
+Exec=avidemux3_qt4
+MimeType=video/mpeg;video/quicktime;video/x-msvideo;video/x-anim;audio/x-mp3;audio/x-mp2;
+Icon=avidemux.png
+Terminal=false
+Type=Application
+Categories=Application;AudioVideo
+EOF
+
+rm -R -f -v ${TMP}
