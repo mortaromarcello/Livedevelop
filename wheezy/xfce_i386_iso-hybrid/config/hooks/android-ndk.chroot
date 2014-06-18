@@ -1,0 +1,17 @@
+#!/bin/bash
+TMP="/tmp/ndk"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+VER="r8c"
+
+wget http://dl.google.com/android/ndk/android-ndk-${VER}-linux-x86.tar.bz2
+tar -C /opt -xjvf android-ndk-r8c-linux-x86.tar.bz2
+cat >> /etc/skel/.environment <<EOF
+# python for android environment
+export ANDROIDNDK="/opt/android-ndk-${VER}"
+export ANDROIDSDK=\$ANDROID_SDK
+export ANDROIDNDKVER=${VER}
+export ANDROIDAPI=14
+export PATH=\$ANDROIDNDK:\$PATH
+EOF
+rm -R -f -v ${TMP}
