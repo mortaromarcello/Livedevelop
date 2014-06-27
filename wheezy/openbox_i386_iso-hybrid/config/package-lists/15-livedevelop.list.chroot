@@ -11,6 +11,7 @@ dmraid
 dmsetup
 evince-gtk
 extlinux
+fbautostart
 file-roller
 filezilla
 fslint
@@ -29,6 +30,7 @@ libreoffice
 libreoffice-gnome
 lightdm
 #lxappearance
+lxpolkit
 lxterminal
 mdadm
 microcom
