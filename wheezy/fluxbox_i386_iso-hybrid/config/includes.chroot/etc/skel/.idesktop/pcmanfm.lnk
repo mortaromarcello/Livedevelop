@@ -1,0 +1,11 @@
+table Icon
+  Caption: File Manager
+  ToolTip.Caption: File Manager
+  Icon: /usr/share/icons/Faenza/apps/64/system-file-manager.png
+  Width: 48
+  Height: 48
+  X: 12
+  Y: 448
+  Command[0]: pcmanfm
+end
+

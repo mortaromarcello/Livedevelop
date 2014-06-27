@@ -1,0 +1,11 @@
+table Icon
+  Caption: Vinagre
+  ToolTip.Caption: Visualizzatore Scrivanie Remote Vinagre
+  Icon: /usr/share/icons/Faenza/apps/64/vinagre.png
+  Width: 48
+  Height: 48
+  X: 12
+  Y: 368
+  Command[0]: vinagre
+end
+

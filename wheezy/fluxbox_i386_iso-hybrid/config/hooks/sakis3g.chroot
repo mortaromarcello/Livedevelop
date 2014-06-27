@@ -1,0 +1,13 @@
+#!/bin/bash
+TMP="/tmp/sakis3g"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v *
+git clone http://github.com/mortaromarcello/sakis3g-source
+cd sakis3g-source
+mkdir build
+./compile
+cp -v build/sakis3gz /usr/bin/sakis3g
+cp -v files/sakis3g.png /usr/share/icons
+cp -v files/sakis3g.desktop /usr/share/applications
+
+rm -R -f -v ${TMP}
