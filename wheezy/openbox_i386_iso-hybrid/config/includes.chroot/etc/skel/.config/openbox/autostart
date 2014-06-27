@@ -1,0 +1,4 @@
+xcompmgr -c -f &
+fbpanel &
+pcmanfm --desktop &
+
