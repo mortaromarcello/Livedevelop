@@ -1,8 +1,0 @@
-#!/bin/bash
-TMP="/tmp/python-midi"
-[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
-rm -R -f -v ${TMP}/*
-git clone https://github.com/vishnubob/python-midi.git
-cd python-midi
-python setup.py build && python setup.py install
-rm -R -f -v ${TMP}
