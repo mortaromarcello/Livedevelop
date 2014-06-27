@@ -1,0 +1,12 @@
+#!/bin/bash
+TMP="/tmp/fbpanel"
+[[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
+rm -R -f -v ${TMP}/*
+git clone http://github.com/mortaromarcello/fbpanel.git
+cd fbpanel
+./configure && make && make install
+msgfmt -v -o fbpanel.mo po/it_IT.UTF-8.po
+mkdir -p /usr/share/fbpanel/locale/it/LC_MESSAGES
+cp -vf fbpanel.mo /usr/share/fbpanel/locale/it/LC_MESSAGES/
+
+rm -R -f -v ${TMP}

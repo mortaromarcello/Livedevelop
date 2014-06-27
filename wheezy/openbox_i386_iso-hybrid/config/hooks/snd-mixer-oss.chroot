@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat >>/etc/modules<<EOF
+snd-mixer-oss
+EOF
