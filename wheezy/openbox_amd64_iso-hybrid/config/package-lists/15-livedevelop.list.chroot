@@ -26,11 +26,8 @@ icoutils
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
-libc6:i386
-libncurses5:i386
 libreoffice
 libreoffice-gnome
-libstdc++6:i386
 lightdm
 #lxappearance
 lxpolkit
@@ -61,4 +58,3 @@ virtualbox
 xcompmgr
 xiphos
 xsane
-wine-bin:i386

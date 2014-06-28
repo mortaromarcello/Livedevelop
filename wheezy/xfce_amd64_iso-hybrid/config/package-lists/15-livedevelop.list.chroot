@@ -24,9 +24,6 @@ icoutils
 ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
-libc6:i386
-libncurses5:i386
-libstdc++6:i386
 mdadm
 microcom
 minicom
@@ -51,4 +48,3 @@ update-notifier
 vinagre
 virtualbox
 xiphos
-wine-bin:i386
