@@ -1,0 +1,10 @@
+#imposta il tipo di carattere
+ gtk-font-name = "sans 10"
+#imopsta il tema
+ gtk-theme-name = "Clearlooks"
+#imposta il tema delle icone
+ gtk-icon-theme-name = "Faenza"
+#nella barra strumenti mostra solo le icone
+ gtk-toolbar-style = GTK_TOOLBAR_ICONS
+#nella barra strumenti mostra le icone in dimensione ridotta
+ gtk-toolbar-icon-size = GTK_ICON_SIZE_SMALL_TOOLBAR
