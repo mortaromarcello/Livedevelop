@@ -353,8 +353,12 @@ Plugin {
     }
 }
 
+#plugin {
+#    type = volume
+#}
+
 plugin {
-    type = volume
+    type = volume2
 }
 
 #plugin {
