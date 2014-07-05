@@ -161,12 +161,12 @@ Plugin {
                 icon = gnome-lockscreen
                 action = slock
             }
-            item {
-                name = Riavvia fbpanel
-                icon = reload
-                action = (fbpanel) && (pkill fbpanel)
-            }
             separator {
+            }
+            item {
+                name = Riavvia
+                icon = gnome-session-reboot
+                action = sudo reboot
             }
             item {
                 name = Spegni

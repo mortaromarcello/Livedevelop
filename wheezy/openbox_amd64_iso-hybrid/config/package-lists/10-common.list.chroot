@@ -3,7 +3,6 @@ live-tools
 user-setup
 eject
 ### Live common packages
-alsa-oss
 build-essential
 #chromium
 #chromium-l10n

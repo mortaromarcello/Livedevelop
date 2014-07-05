@@ -7,6 +7,7 @@ codeblocks-contrib
 #codelite
 cmake
 curl
+eagle
 eclipse
 electric
 empty-expect
