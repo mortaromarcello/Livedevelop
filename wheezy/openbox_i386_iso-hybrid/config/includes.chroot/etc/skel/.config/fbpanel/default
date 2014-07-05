@@ -161,17 +161,12 @@ Plugin {
                 icon = gnome-lockscreen
                 action = slock
             }
-            #item {
-            #    name = Configura fbpanel
-            #    icon = gnome-settings
-            #    action = fbpanel -C
-            #}
-            separator {
-            }
             item {
-                name = Riavvia
-                icon = gnome-session-reboot
-                action = sudo reboot
+                name = Riavvia fbpanel
+                icon = reload
+                action = (fbpanel) && (pkill fbpanel)
+            }
+            separator {
             }
             item {
                 name = Spegni
@@ -202,16 +197,20 @@ Plugin {
     }
 }
 
-#Plugin {
-#    type = space
-#    config {
-#        size = 8
-#    }
-#}
+Plugin {
+    type = space
+    config {
+        size = 8
+    }
+}
 
-#Plugin {
-#    type = separator
-#}
+Plugin {
+    type = reloadconfig
+    config {
+        icon = reload
+        tooltip = Reload file configuration
+    }
+}
 
 Plugin {
     type = space
@@ -353,17 +352,22 @@ Plugin {
     }
 }
 
-#plugin {
-#    type = volume
-#}
-
 plugin {
     type = volume2
+    config {
+        mixer = xterm -e alsamixer
+    }
 }
 
-#plugin {
-#    type = battery
-#}
+plugin {
+    type = battery2
+    config {
+        ShowIconInAC = false
+        LowLimit = 3
+        LowLimitNotify = 10
+        TypeShutdown = # 0=sudo shutdown -h now, 1=pm-is-supported --suspend && sudo pm-suspend, 2=pm-is-supported --hibernate && sudo pm-hibernate, 3=hibernate, 4=pm-is-supported --suspend-hybrid && sudo pm-suspend-hybrid
+    }
+}
 
 Plugin {
     type = tray
