@@ -1,0 +1,7 @@
+xcompmgr -c -f &
+fbpanel &
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+pcmanfm --desktop &

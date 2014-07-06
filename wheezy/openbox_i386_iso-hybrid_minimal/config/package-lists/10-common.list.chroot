@@ -1,0 +1,37 @@
+### packages for the live distro
+live-tools
+user-setup
+eject
+### Live common packages
+build-essential
+chromium
+chromium-l10n
+dosfstools
+firmware-b43-installer
+firmware-linux
+firmware-realtek
+flashplugin-nonfree
+gparted
+gstreamer0.10-plugins-bad
+k3b
+k3b-i18n
+libgtk2-perl
+linux-wlan-ng-firmware
+lm-sensors
+mc
+memtest86+
+network-manager-gnome
+ntfs-3g
+openbox
+p7zip-full
+pcmanfm
+rar
+samba
+unison-gtk
+unrar
+unzip
+usbutils
+vlc
+wine
+xorg
+zip
