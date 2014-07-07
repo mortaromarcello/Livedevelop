@@ -22,7 +22,7 @@ Type=Application
 Name=Installa Livedevelop
 Comment=
 Icon=/usr/local/share/install_distro/install_distro.png
-Exec=x-terminal-emulator -e gksu /usr/local/bin/install_distro
+Exec=x-terminal-emulator -e gksudo /usr/local/bin/install_distro
 Terminal=false
 Categories=System;
 EOF
