@@ -205,14 +205,6 @@ Plugin {
 }
 
 Plugin {
-    type = reloadconfig
-    config {
-        icon = reload
-        tooltip = Reload file configuration
-    }
-}
-
-Plugin {
     type = space
     config {
         size = 8
