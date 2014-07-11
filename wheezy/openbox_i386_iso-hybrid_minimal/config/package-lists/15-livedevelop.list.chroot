@@ -40,6 +40,7 @@ php5-mcrypt
 php5-mysql
 php5-tidy
 proftpd-basic
+pulseaudio
 putty
 syslinux
 update-notifier
