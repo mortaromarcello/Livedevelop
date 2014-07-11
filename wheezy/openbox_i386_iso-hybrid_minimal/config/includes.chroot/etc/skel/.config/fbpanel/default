@@ -347,7 +347,7 @@ Plugin {
 plugin {
     type = volume2
     config {
-        mixer = xterm -e alsamixer
+        mixer = x-terminal-emulator -e alsamixer
     }
 }
 
