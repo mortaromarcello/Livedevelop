@@ -36,6 +36,7 @@ libjack-jackd2-dev
 liblash-compat-dev
 liblocale-gettext-perl
 libncurses5-dev
+libnotify-dev
 libopenal-dev
 libphysfs-dev
 libproc-processtable-perl
