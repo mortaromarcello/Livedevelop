@@ -7,7 +7,9 @@ cabextract
 calibre
 clamtk
 clearlooks-phenix-theme
+cryptmount
 cutecom
+disktype
 dkopp
 dmraid
 dmsetup
@@ -18,9 +20,12 @@ filezilla
 fslint
 gksu
 galculator
+gddrescue
 gdebi
 gimp
 gpicview
+gdisk
+gpart
 grub-pc
 gsmartcontrol
 hardinfo
@@ -41,8 +46,10 @@ microcom
 minicom
 myresque
 ntp
+parted
 pdfchain
 pdfsam
+perforate
 php5
 php5-curl
 php5-gd
@@ -54,6 +61,7 @@ pulseaudio
 putty
 qemu
 qemu-kvm
+stress
 stressapptest
 suckless-tools
 sword-dict-strongs-greek
