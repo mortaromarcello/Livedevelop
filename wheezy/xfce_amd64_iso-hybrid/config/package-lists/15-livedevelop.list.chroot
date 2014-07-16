@@ -5,7 +5,9 @@ blueman
 cabextract
 calibre
 clamtk
+cryptmount
 cutecom
+disktype
 dkopp
 dmraid
 dmsetup
@@ -17,7 +19,10 @@ filezilla
 fslint
 gksu
 galculator
+gddrescue
 gdebi
+gdisk
+gpart
 grub-pc
 gsmartcontrol
 hardinfo
@@ -30,10 +35,12 @@ lvm2
 mdadm
 microcom
 minicom
-myresque
+myrescue
 ntp
+parted
 pdfchain
 pdfsam
+perforate
 php5
 php5-curl
 php5-gd
@@ -44,6 +51,7 @@ proftpd-basic
 putty
 qemu
 qemu-kvm
+stress
 stressapptest
 sword-dict-strongs-greek
 sword-dict-strongs-hebrew
