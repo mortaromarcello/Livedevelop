@@ -5,6 +5,6 @@ rm -R -f -v ${TMP}/*
 VER=3.4.1
 if [ -d /usr/lib/eclipse ]; then
   wget http://downloads.sourceforge.net/project/pydev/pydev/PyDev%20${VER}/PyDev%20${VER}.zip
-  unzip "PyDev ${VER}.zip" -d /usr/lib/eclipse
+  unzip "PyDev ${VER}.zip" -o -d /usr/lib/eclipse
 fi
 rm -R -f -v ${TMP}

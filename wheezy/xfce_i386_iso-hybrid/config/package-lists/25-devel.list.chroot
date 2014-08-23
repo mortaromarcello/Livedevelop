@@ -7,6 +7,7 @@ codeblocks-contrib
 #codelite
 cmake
 curl
+devhelp
 eagle
 eclipse
 electric
@@ -70,6 +71,7 @@ monodevelop-database
 monodevelop-nunit
 monodevelop-versioncontrol
 nasm
+nemiver
 netexpect
 openjdk-7-jdk
 patchutils
