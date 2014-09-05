@@ -7,13 +7,16 @@ fi
 [[ ! -d ${TMP} ]] && mkdir -p ${TMP}; cd ${TMP}
 rm -R -f -v ${TMP}/*
 VER=$(uname -r)
+VER1=$(uname -r |awk -F. '{print $1"."$2}')
 
-sudo apt-get install --yes build-essential module-assistant mercurial linux-headers-${VER}
+sudo apt-get install --yes build-essential module-assistant mercurial linux-headers-${VER} linux-source-${VER1}
 m-a update
-#m-a prepare
+m-a prepare
 git clone git://linuxtv.org/media_build.git
 cd media_build
 ./build
 make install
+
+sudo apt-get purge --yes linux-source-${VER1}
 
 rm -R -f -v ${TMP}
