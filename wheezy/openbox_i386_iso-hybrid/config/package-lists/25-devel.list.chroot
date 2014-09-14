@@ -27,9 +27,11 @@ gnu-efi
 gphpedit
 gtranslator
 intltool
+libcairo2-doc
 libfontconfig1-dev
 libfribidi-dev
 libfuse-dev
+libgdk-pixbuf2.0-doc
 libghc-gtk-dev
 libgirepository1.0-dev
 libglew-dev
