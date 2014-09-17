@@ -47,11 +47,15 @@ libncurses5-dev
 libnotify-dev
 libopenal-dev
 libphysfs-dev
+libpoppler-glib-dev
 libproc-processtable-perl
 libqt4-dev
 libreadline-dev
+librsvg2-dev
+librsvg2-doc
 libsdl1.2-dev
 libsmf-dev
+libspectre-dev
 libsublime-dev
 libusb-dev
 libusb-1.0-0-dev
