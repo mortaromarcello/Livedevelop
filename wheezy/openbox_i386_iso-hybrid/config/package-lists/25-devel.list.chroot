@@ -28,6 +28,8 @@ gphpedit
 gtranslator
 intltool
 libcairo2-doc
+libcairomm-1.0-dev
+libcairomm-1.0-doc
 libfontconfig1-dev
 libfribidi-dev
 libfuse-dev
