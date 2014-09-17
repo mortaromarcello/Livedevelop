@@ -34,7 +34,6 @@ hardinfo
 hwinfo
 hping3
 icoutils
-ktorrent
 libapache2-mod-php5
 libavahi-compat-libdnssd1
 libreoffice
@@ -75,6 +74,7 @@ testdisk
 update-notifier
 vinagre
 virtualbox
+vuze
 xcompmgr
 xiphos
 xsane
