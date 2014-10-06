@@ -30,6 +30,7 @@ intltool
 libcairo2-doc
 libcairomm-1.0-dev
 libcairomm-1.0-doc
+libcanberra-gtk3-dev
 libdconf-dev
 libdbus-glib-1-dev
 libfontconfig1-dev
