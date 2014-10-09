@@ -1,3 +1,3 @@
-#xcompmgr -c -f &
+xcompmgr -n &
 fbpanel &
 pcmanfm --desktop &
