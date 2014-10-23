@@ -14,7 +14,9 @@ firmware-linux
 firmware-realtek
 flashplugin-nonfree
 goldendict
-google-chrome-stable
+#google-chrome-stable
+chromium
+chromium-l10n
 gparted
 gstreamer0.10-plugins-bad
 k3b

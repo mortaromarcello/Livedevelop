@@ -5,7 +5,6 @@ bless
 bzr
 codeblocks
 codeblocks-contrib
-#codelite
 cmake
 curl
 devhelp
@@ -110,6 +109,7 @@ sqlite
 sqlite3
 subversion
 swig
+valac
 wx2.8-doc
 wx2.8-examples
 wx2.8-headers
