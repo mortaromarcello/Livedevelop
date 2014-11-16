@@ -50,6 +50,7 @@ libnotify-dev
 libopenal-dev
 libphysfs-dev
 libpoppler-glib-dev
+libpoppler-qt4-dev
 libproc-processtable-perl
 libqt4-dev
 libreadline-dev
